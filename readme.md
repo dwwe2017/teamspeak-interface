@@ -1,5 +1,5 @@
-TEA(M)SPEAK INTERFACE
-Version Overview
+## TSI - Tea(m)speak Interface (official)
+### Version Overview
 
 The latest version can be found under the "latest" branch
 
