@@ -1,0 +1,1 @@
+$(document).ready(function(){function d(){$.urlParam=function(a){a=(new RegExp("[?&]"+a+"=([^&#]*)")).exec(window.location.href);return null!==a?a[1]:0};var b=$.urlParam("id"),c=$.urlParam("sid");$.post("index.php?controller=cron&action=cron"+(0!==b?"&id="+b:"")+(0!==c?"&sid="+c:""))}(function(){setTimeout(function(){d()},1E4)})()});
