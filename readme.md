@@ -9,7 +9,7 @@ https://github.com/dwwe2017/teamspeak-interface/tree/latest
 You can find the changes to the current version either in the respective changelog.txt file or under the following link
 Changelog: https://github.com/dwwe2017/teamspeak-interface/blob/latest/changelog.txt
 
-##### Please note that the latest versions of the "latest2" branch are not necessarily intended for productive use, but only for preliminary tests. If such a version is used, serious errors or irreversible data loss must be expected. The versions of the "latest" branch are used therefore exclusively at your own risk! Stable versions can be found under the Releases link with the addition of "stable" to the version number
+#### Please note that the latest versions of the "latest" branch are not necessarily intended for productive use, but only for preliminary tests. If such a version is used, serious errors or irreversible data loss must be expected. The versions of the "latest" branch are used therefore exclusively at your own risk! Stable versions can be found under the Releases link with the addition of "stable" to the version number
 
 ---
 
