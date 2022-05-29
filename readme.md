@@ -34,7 +34,7 @@ upload_max_filesize      8 MB            16 MB
 ```
 
 ### Required PHP extensions
-* [ionCube Loader](http://www.ioncube.com/loaders.php)
+* [ionCube Loader](http://www.ioncube.com/loaders.php?xp=JXMWJL)
 * BC Math
 * Curl
 * Multibyte String
