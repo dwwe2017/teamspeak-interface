@@ -20,6 +20,18 @@
 ### Docker Hub Container
 ```docker pull dwwe/tsi```
 
+### System requirements
+```
+@Properties              @Minimal        @Recommended
+Memory                   128 MB          512 MB
+PHP                      v7.2            v7.3
+MySQL (optional)         v5.0            v5.7
+safe_mode                Off             Off
+max_execution_time       30 sec          60 sec
+max_input_time           60 sec          120 sec
+post_max_size            8 MB            16 MB
+upload_max_filesize      8 MB            16 MB
+```
 ---
 
 © Copyright 2022 by DW Web-Engineering
