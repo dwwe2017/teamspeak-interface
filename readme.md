@@ -32,6 +32,16 @@ max_input_time           60 sec          120 sec
 post_max_size            8 MB            16 MB
 upload_max_filesize      8 MB            16 MB
 ```
+
+### Required PHP extensions
+* [ionCube Loader](http://www.ioncube.com/loaders.php)
+* BC Math
+* Curl
+* Multibyte String
+* Zip
+* Zlib
+* GD Library	FreeType
+
 ---
 
 © Copyright 2022 by DW Web-Engineering
