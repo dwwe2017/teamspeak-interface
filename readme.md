@@ -1,5 +1,5 @@
 ## TSI - Tea(m)speak Interface (official)
-### Version Overview 
+### Web Solution #1 for TeaSpeak & Teamspeak 3
 
 ![AWS](https://codebuild.eu-central-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoieHFkWkVMN0VuNE9RKy83VW5pdlVTekRuNkd6YVBNYUtTVDEzcFdPRU0zbG9qbjZHN2I1WDBCYWZqTW1HaU54c1dYbzJkR2UvODV3RlllSnJKbHgxNE9ZPSIsIml2UGFyYW1ldGVyU3BlYyI6Ik1LdmtZaEpJVVBOekx3ZlAiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
 
