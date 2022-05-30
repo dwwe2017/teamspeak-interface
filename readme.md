@@ -42,6 +42,13 @@ upload_max_filesize      8 MB            16 MB
 * Zlib
 * GD Library	FreeType
 
+### Other requirements
+* Licensing and operation only possible under a valid domain or subdomain
+* Browser: Mozilla Firefox from Version 58.0.1 (64-Bit) / Google Chrome from Version 63.0.3239.132 (Official build) (64-Bit)
+* Screen resolution: 1768x992 / 1920x1080
+* Internet connection required
+* Support for .htaccess files and mod_rewrite
+
 ---
 
 © Copyright 2022 by DW Web-Engineering
