@@ -23,7 +23,7 @@
 ```docker pull ghcr.io/dwwe2017/teamspeak-interface:stable```
 
 ### Docker Hub Container
-```docker push dwwe/tsi:stable```
+```docker pull dwwe/tsi:stable```
 
 ### System requirements
 ```
