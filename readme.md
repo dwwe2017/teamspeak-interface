@@ -6,7 +6,7 @@
 ### Complete product description
 [TSI - Tea(m)speak Interface - WEB SOLUTION #1 FOR TEASPEAK & TEAMSPEAK 3](https://github.com/dwwe2017/teamspeak-interface/wiki)
 
-### Download
+### Download for manual installation
 
 * You can download the latest STABLE version from the [release page](https://github.com/dwwe2017/teamspeak-interface/releases)
 * The latest "NIGHTLY" version can be found under the branch [latest](https://github.com/dwwe2017/teamspeak-interface/tree/latest)
@@ -14,8 +14,11 @@
 
 **Please note that the latest versions of the "latest" branch are not necessarily intended for productive use, but only for preliminary tests. If such a version is used, serious errors or irreversible data loss must be expected. The versions of the "latest" branch are used therefore exclusively at your own risk! Stable versions can be found under the Releases link with the addition of "stable" to the version number**
 
-### Installation instructions
+### Instructions for regular installation
 [Installation - Step by Step](https://github.com/dwwe2017/teamspeak-interface/wiki/Installation-step-by-step)
+
+### GitHub Container Registry
+```docker pull ghcr.io/dwwe2017/teamspeak-interface:stable```
 
 ### Docker Hub Container
 ```docker pull dwwe/tsi```
