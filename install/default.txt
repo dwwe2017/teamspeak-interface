@@ -1,0 +1,53 @@
+<?php
+/**
+ * Copyright (c) 2020. DW Web-Engineering, all rights reserved.
+ */
+
+/**
+ * MySQL database configuration
+ */
+$connectionOptions = [
+    'driver' => 'dbdriv',
+    'host' => 'dbhost',
+    'user' => 'dbuser',
+    'password' => 'dbpass',
+    'dbname' => 'dbdesc',
+    'path' => 'dbpath',
+    'charset' => 'dbcharset',
+    'prefix' => 'dbpref'
+];
+
+/**
+ * Application/Doctrine configuration
+ */
+$applicationOptions = [
+    'debug_mode' => false,
+    'entity_dir' => dirname(__DIR__) . '/src/Entities',
+    //'uniform_data_path' => true,
+    //'dyn_compressor_debug' => true,
+    //'use_random_session_ids' => true,
+    //'api_debug_mode' => true,
+    //'ts_custom_ident' => 'test_test1234',
+    //'cache_show_data' => true,
+    //'use_experimental_blacklist_check' => true,
+    //'is_zendserver' => false,
+    //'lambda_runtime_environment' => false,
+    //'ts_explorer_auto_refresh_intervall' => 2000,
+    //'tea_serversnapshotcreate_version' => 0,
+    /*
+    'smtp' => [
+        //'host' => '',
+        //'smtpAuth' => false, // Enable SMTP authentication
+        //'username' => '',
+        //'password' => '',
+        //'smtpSecure' => 'ssl',
+        //'port' => 587 // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+    ],
+    */
+    /*
+    'mail_settings' => [
+        //'default_sender_address' => '', // from@example.com,
+        //'default_sender_name' => '', // e.g. Super Administrator,
+        //'default_signature' => ''
+    ]*/
+];

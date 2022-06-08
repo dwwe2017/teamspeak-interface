@@ -1,0 +1,10 @@
+{
+    "name": "Flat",
+    "type": "tsi",
+    "min-tsi": "1.3.0",
+    "version": "1.3.0",
+    "author": "Daniel W.",
+    "website": "https://dwwe.de",
+    "copyright": "2020 DW </> Web-Engineering",
+    "license": "https://dwwe.de/shop/index.php?product-terms-and-conditions"
+}

@@ -1,0 +1,64 @@
+﻿
+*** CONTRACT LANGUAGE ***
+The contract language is German. Accordingly, the license terms are only available in German.
+
+
+*** DE-LIZENZEN / DEMO ***
+
+1) Einräumung von Nutzungsrechten mit DE-Lizenz (Demo)
+1.1 Der Lizenzgeber (Daniel Welzl, handelnd unter "DW Web-Engineering") räumt dem Lizenznehmer ein einfaches, zeitlich begrenztes Recht ein, die Software in der vereinbarten Hard- und Softwareumgebung zu privaten Zwecken für maxial 30 Tage zu nutzen.
+1.2 Ein Bearbeitungsrecht wird dem Lizenznehmer nicht eingeräumt.
+1.3 Die Vermietung der Software ist nicht zulässig.
+1.4 Dem Lizenznehmer ist es verboten, ggf. vorhandenen Kopierschutz zu entfernen und/oder zu verändern.
+1.5 Der Lizenznehmer verpflichtet sich, durch angemessene technische und organisatorische Maßnahmen dafür zu sorgen, dass die bestimmungsgemäße Nutzung der Software sichergestellt ist.
+1.6 Der Lizenznehmer ist nicht berechtigt, von der Software eine Kopie zu Sicherungszwecken herzustellen.
+1.9 Verletzt der Lizenznehmer die vereinbarten Nutzungsrechte schwerwiegend, kann der Lizenzgeber die Einräumung der Nutzungsrechte an der betroffenen Software außerordentlich kündigen. Dies setzt eine erfolglose Abmahnung mit angemessener Fristsetzung durch den Lizenzgeber voraus.
+1.10 Im Falle der Kündigung ist der Lizenznehmer verpflichtet, alle vorhandenen Kopien der Software zu löschen und dies dem Lizenzgeber auf Verlangen in Textform zu bestätigen.
+1.11 Die sonstigen gesetzlichen und vertraglichen Regelungen bleiben unberührt.
+
+
+*** NP-LIZENZEN / NON-PROFIT ***
+
+1) Einräumung von Nutzungsrechten mit NP-Lizenz (Non-Profit)
+1.1 Der Lizenzgeber (Daniel Welzl, handelnd unter "DW Web-Engineering") räumt dem Lizenznehmer ein einfaches, zeitlich begrenztes und/oder unbegrenztes, übertragbares Recht ein, die Software in der vereinbarten Hard- und Softwareumgebung zu privaten Zwecken zu nutzen. (Diese Bestimmung schließt auch ein Sponsoring jeglicher Art mit aus!)
+1.2 Ein Bearbeitungsrecht wird dem Lizenznehmer nicht eingeräumt.
+1.3 Die Vermietung der Software ist nicht zulässig.
+1.4 Dem Lizenznehmer ist es verboten, ggf. vorhandenen Kopierschutz zu entfernen und/oder zu verändern.
+1.5 Der Lizenznehmer verpflichtet sich, durch angemessene technische und organisatorische Maßnahmen dafür zu sorgen, dass die bestimmungsgemäße Nutzung der Software sichergestellt ist.
+1.6 Der Lizenznehmer ist berechtigt, von der Software eine Kopie zu Sicherungszwecken herzustellen. Die einer ordnungsgemäßen Datensicherung dienenden Vervielfältigungen der Software sind Teil des bestimmungsgemäßen Gebrauchs.
+1.7 Macht der Lizenznehmer von seinem Recht zur Übertragung der Nutzungsrechte an einen Dritten Gebrauch, hat er seine vertraglichen Verpflichtungen dem Dritten aufzuerlegen. Mit der Übertragung erlöschen die Nutzungsrechte des Lizenznehmers. Alle vorhandenen Kopien der Software sind zu löschen.
+1.8 Die Rechtseinräumung wird gem. § 158 Abs. 1 BGB erst wirksam, wenn der Lizenznehmer die geschuldete Vergütung vollständig geleistet hat.
+1.9 Verletzt der Lizenznehmer die vereinbarten Nutzungsrechte schwerwiegend, kann der Lizenzgeber die Einräumung der Nutzungsrechte an der betroffenen Software außerordentlich kündigen. Dies setzt eine erfolglose Abmahnung mit angemessener Fristsetzung durch den Lizenzgeber voraus.
+1.10 Im Falle der Kündigung ist der Lizenznehmer verpflichtet, alle vorhandenen Kopien der Software zu löschen und dies dem Lizenzgeber auf Verlangen in Textform zu bestätigen.
+1.11 Die sonstigen gesetzlichen und vertraglichen Regelungen bleiben unberührt.
+
+
+*** CU-LIZENZEN / COMMERCIAL USE ***
+
+1) Einräumung von Nutzungsrechten mit CU-Lizenz (Commercial Use)
+1.1 Der Lizenzgeber (Daniel Welzl, handelnd unter "DW Web-Engineering") räumt dem Lizenznehmer ein einfaches, zeitlich begrenztes und/oder unbegrenztes, übertragbares Recht ein, die Software in der vereinbarten Hard- und Softwareumgebung zu privaten und/oder geschäftlichen Zwecken zu nutzen.
+1.2 Ein Bearbeitungsrecht wird dem Lizenznehmer nicht eingeräumt.
+1.3 Die Vermietung der Software ist nicht zulässig.
+1.4 Dem Lizenznehmer ist es verboten, ggf. vorhandenen Kopierschutz zu entfernen und/oder zu verändern.
+1.5 Der Lizenznehmer verpflichtet sich, durch angemessene technische und organisatorische Maßnahmen dafür zu sorgen, dass die bestimmungsgemäße Nutzung der Software sichergestellt ist.
+1.6 Der Lizenznehmer ist berechtigt, von der Software eine Kopie zu Sicherungszwecken herzustellen. Die einer ordnungsgemäßen Datensicherung dienenden Vervielfältigungen der Software sind Teil des bestimmungsgemäßen Gebrauchs.
+1.7 Macht der Lizenznehmer von seinem Recht zur Übertragung der Nutzungsrechte an einen Dritten Gebrauch, hat er seine vertraglichen Verpflichtungen dem Dritten aufzuerlegen. Mit der Übertragung erlöschen die Nutzungsrechte des Lizenznehmers. Alle vorhandenen Kopien der Software sind zu löschen.
+1.8 Die Rechtseinräumung wird gem. § 158 Abs. 1 BGB erst wirksam, wenn der Lizenznehmer die geschuldete Vergütung vollständig geleistet hat.
+1.9 Verletzt der Lizenznehmer die vereinbarten Nutzungsrechte schwerwiegend, kann der Lizenzgeber die Einräumung der Nutzungsrechte an der betroffenen Software außerordentlich kündigen. Dies setzt eine erfolglose Abmahnung mit angemessener Fristsetzung durch den Lizenzgeber voraus.
+1.10 Im Falle der Kündigung ist der Lizenznehmer verpflichtet, alle vorhandenen Kopien der Software zu löschen und dies dem Lizenzgeber auf Verlangen in Textform zu bestätigen.
+1.11 Die sonstigen gesetzlichen und vertraglichen Regelungen bleiben unberührt.
+
+
+*** SE-Lizenzen (Abonnements) ***
+
+1) Einräumung von Nutzungsrechten mit SE-Lizenz (Abonnements)
+1.1 Der Lizenzgeber (Daniel Welzl, handelnd unter "DW Web-Engineering") räumt dem Lizenznehmer ein einfaches, zeitlich begrenztes, nicht übertragbares Recht ein, die Software in der vereinbarten Hard- und Softwareumgebung zu privaten und/oder geschäftlichen Zwecken zu nutzen.
+1.2 Ein Bearbeitungsrecht wird dem Lizenznehmer nicht eingeräumt.
+1.3 Die Vermietung der Software ist nicht zulässig.
+1.4 Dem Lizenznehmer ist es verboten, ggf. vorhandenen Kopierschutz zu entfernen und/oder zu verändern.
+1.5 Der Lizenznehmer verpflichtet sich, durch angemessene technische und organisatorische Maßnahmen dafür zu sorgen, dass die bestimmungsgemäße Nutzung der Software sichergestellt ist.
+1.6 Die Rechtseinräumung wird gem. § 158 Abs. 1 BGB erst wirksam, wenn der Lizenznehmer die geschuldete Vergütung vollständig geleistet hat.
+1.7 Verletzt der Lizenznehmer die vereinbarten Nutzungsrechte schwerwiegend, kann der Lizenzgeber die Einräumung der Nutzungsrechte an der betroffenen Software außerordentlich kündigen. Dies setzt eine erfolglose Abmahnung mit angemessener Fristsetzung durch den Lizenzgeber voraus.
+1.8 Im Falle der Kündigung ist der Lizenznehmer verpflichtet, alle vorhandenen Kopien der Software zu löschen und dies dem Lizenzgeber auf Verlangen in Textform zu bestätigen.
+1.9 Die sonstigen gesetzlichen und vertraglichen Regelungen bleiben unberührt.
+
