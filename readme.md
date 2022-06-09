@@ -8,6 +8,9 @@
 ### Complete product description
 [TSI - Tea(m)speak Interface - WEB SOLUTION #1 FOR TEASPEAK & TEAMSPEAK 3](https://github.com/dwwe2017/teamspeak-interface/wiki)
 
+### Are you looking for a license? 
+From a monthly [sponsorship](https://github.com/sponsors/dwwe2017) of only $ 5 you not only support me in my work, you also receive a license key for commercial or private use.
+
 ### Download for manual installation
 
 * You can download the latest STABLE version from the [release page](https://github.com/dwwe2017/teamspeak-interface/releases)
