@@ -1,4 +1,4 @@
-# TSI - Tea(m)speak Interface | Web Solution #1 for TeaSpeak & Teamspeak 3 ![Teamspeak 3](symbols/ts3.png) ![TeaSpeak](symbols/tea.png)
+# TSI - Tea(m)speak Interface | Web Solution #1 for TeaSpeak & Teamspeak 3
 **More than just a simple web interface for TeaSpeak and TeamSpeak 3 servers ...**
 
 ![TSI](banner/tsi-banner.png)
