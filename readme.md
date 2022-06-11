@@ -6,7 +6,7 @@
 ![TSI](https://github.com/dwwe2017/teamspeak-interface/blob/master/media/banner/tsi-banner.png)
 
 ### Complete product description
-[TSI - Tea(m)speak Interface - WEB SOLUTION #1 FOR TEASPEAK & TEAMSPEAK 3](https://github.com/dwwe2017/teamspeak-interface/wiki)
+[TSI - Tea(m)speak Interface - WEB SOLUTION #1 FOR TEASPEAK & TEAMSPEAK 3](https://dwwe2017.github.io/teamspeak-interface/)
 
 ### Are you looking for a license? 
 From a monthly [sponsorship](https://github.com/sponsors/dwwe2017) of only $ 5 you not only support me in my work, you also receive a license key for commercial or private use.
