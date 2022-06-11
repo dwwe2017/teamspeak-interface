@@ -1,7 +1,7 @@
 # TSI - Tea(m)speak Interface | Web Solution #1 for TeaSpeak & Teamspeak 3
 **More than just a simple web interface for TeaSpeak and TeamSpeak 3 servers ...**
 
-![TSI](https://github.com/dwwe2017/teamspeak-interface/blob/master/media/banner/tsi-banner.png)
+![TSI](tsi-banner.png)
 
 Convince yourself of probably the most comprehensive web solution for the management of your voice server and test the TSI in the [latest released version](https://github.com/dwwe2017/teamspeak-interface/releases) now for 30 days completely free of charge and without obligation.
 
