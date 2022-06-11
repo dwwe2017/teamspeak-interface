@@ -1,37 +1,149 @@
-## Welcome to GitHub Pages
+# TSI - Tea(m)speak Interface | Web Solution #1 for TeaSpeak & Teamspeak 3
+**More than just a simple web interface for TeaSpeak and TeamSpeak 3 servers ...**
 
-You can use the [editor on GitHub](https://github.com/dwwe2017/teamspeak-interface/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+![TSI](https://github.com/dwwe2017/teamspeak-interface/blob/master/media/banner/tsi-banner.png)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Convince yourself of probably the most comprehensive web solution for the management of your voice server and test the TSI in the [latest released version](https://github.com/dwwe2017/teamspeak-interface/releases) now for 30 days completely free of charge and without obligation.
 
-### Markdown 
+### Are you looking for a license?
+From a monthly [sponsorship](https://github.com/sponsors/dwwe2017) of only $ 5 you receive a license key for commercial or private use.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+**Features and Description (Main System)**
 
-```markdown
-Syntax highlighted code block
+The Teamspeak interface is the ideal solution for anyone who wants to have their TeaSpeak or Teamspeak 3 server under control via the web. Whether for personal use, for example, to grant limited access to members of the Guild or as a professional hoster to provide the customer with an exclusive service, the TSI is designed and suitable for all areas. The licensing system is also based on the factor of value in terms of pricing in order to make it affordable for every user type.
 
-# Header 1
-## Header 2
-### Header 3
+**The following features are available right from the start with a basic license:**
 
-- Bulleted
-- List
+_Please note that the scope of all functions is too large to list below, which is why we have limited ourselves to the essential features._
 
-1. Numbered
-2. List
+### TSI Dashboard
 
-**Bold** and _Italic_ and `Code` text
+* Multifunctional and clear dashboard for efficient management of voice server instances. It supports both TeaSpeak and Teamspeak 3 servers.
+* Powerful role system for customizing the access rights of additional users to the TSI and virtual voice servers. Especially in this area, we have tried to implement everything very extensively, so that you are free to the smallest detail in terms of the design of the desired Gruppenhierachie.
+* Managing additional users allows other people to access one or more voice servers. Authorizations can be individually differentiated using groups / roles. For example, you can assign a co-administrator to a specific virtual server or multiple virtual servers for which he or she only has permissions to manage server or channel groups through a predefined role.
 
-[Link](url) and ![Image](src)
-```
+![](https://github.com/dwwe2017/teamspeak-interface/blob/master/media/description/TSI%20-%20Dashboard.png)
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+### Settings
 
-### Jekyll Themes
+* In the system settings menu, for example, you can easily put the interface into a maintenance mode, remove temporary files or edit the settings related to the intelligent multilingual system, and much more.
+* In the field of security options, the system can be protected with just a few clicks against unsafe request methods, clickjacking and other attack options.
+* With the help of cronjobs tasks are done fully automatically. For this purpose, ready-made methods and classes are also included, which for example create snaphots of all virtual voice servers at fixed intervals or simply empty the cache and the logs.
+* The Customization menu provides a variety of options, such as a CSS editor and a package manager for individual style packages, to customize the look and style of your own taste.
+* The menu item Cache provides an overview of the currently used resources of the buffer. Currently, the TSI can be used with the caching systems "APCu, ArrayCache and FileSystem", but the compatibility in this area is constantly being expanded.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dwwe2017/teamspeak-interface/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+![](https://github.com/dwwe2017/teamspeak-interface/blob/master/media/description/TSI%20-%20Settings.png)
 
-### Support or Contact
+### Instance / Serverlist
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+* An instance of course includes the virtual voice server to manage it. Here are the key features such as startup or stop, modify autostart or create and remove quickly available.
+* Templates make it possible to create individual templates and create new virtual voice servers with just a few clicks.
+* Particularly handy is the search function, which allows in just a few seconds the desired node z. B. filter out by name or port in real time.
+* Of course, actions can be applied to multiple voice servers simultaneously, such as taking snapshots or resetting channel lists, and much more.
+* In addition, it is possible to store notes for individual nodes, which can then be minimized, hidden and of course retrieved at any time. This is especially useful if you have a large number of virtual voice servers to manage and may help keep track of them.
+
+![](https://github.com/dwwe2017/teamspeak-interface/blob/master/media/description/TSI%20-%20Serverlist.png)
+
+### Instance / Statistics
+
+* Statistics are generated by the system using the program's own cronjob system, which we have briefly discussed earlier.
+* The statistics page provides detailed information about the utilization of the voice server instances as well as the usage behavior of the clients, traffic and the consumption of resources.
+* In the presentation, it is possible to choose between different views and evaluation forms and, moreover, to compare several values with one another.
+* For instances with a very high number of voice servers, this instrument can be a powerful tool. Thus, for example, based on the statistics, it can be evaluated on which days and at which time the number of clients is highest in order, for example, to shift maintenance work to periods in which the usage behavior is rather low.
+
+![](https://github.com/dwwe2017/teamspeak-interface/blob/master/media/description/TSI%20-%20Instance%20stats.png)
+
+### Virtual Voice-Server / Quick-Menu
+
+* The quick menu of the virtual voice server is the central hub for a quick overview and access to all other features.
+* From here it is always possible, either via the quick menu or via the navigation, to access all functions of the node, for example, to view logs or create authorization keys (tokens), and much more.
+* In the area of snapshots, the TSI offers a kind of backup option, which unfortunately was not implemented by default on TeaSpeak and Teamspeak 3 servers. Here so-called TSI backup packages can be created and played, which in addition to the known configuration contents as they are also included in ordinary snapshots include, among other things, all icons.
+* Another feature that we have implemented here is the ability to upload and set your own host banner with just a few clicks. This and much more awaits you in the so-called quick menu of the virtual voice server.
+
+![](https://github.com/dwwe2017/teamspeak-interface/blob/master/media/description/TSI%20-%20Quick%20Menu.png)
+
+### Virtual Voice-Server / Interface & TS-Explorer
+
+* At the heart of all voice servers, there are many more features than we could list here, so we'll limit ourselves to the key features below:
+* Create, edit and delete channels, move clients and channels via drag and drop.
+* Sending and receiving text messages to / from the voice server, channel, client (chat function).
+* Editing the respective voice server using all common functions as they are known for example from the TS-Client.
+* Detailed listing of all specific properties and characteristics of each node.
+* Create, delete and control music bots (Only possible with TeaSpeak servers).
+* Editing server and channel groups of currently present clients.
+* Detailed listing of all information of selected clients.
+* Kicking / banning clients via the context menu of the TS Explorer (right mouse button).
+* Submitting complaints via the context menu of the TS Explorer.
+* And much more...
+
+![](https://github.com/dwwe2017/teamspeak-interface/blob/master/media/description/TSI%20-%20Server%20Interface.png)
+
+### Virtual Voice-Server / Statistics
+
+* We also donated a statistical evaluation to the virtual voice servers. Analogous to the statistics of the instances, these data are also collected and evaluated with the help of the cronjob system.
+* Again, there is the possibility to choose between different representations and evaluation forms. The values and data types of the voice server differ from those of the higher-level instance in that they are considerably more extensive and thus give even a better insight into the events of the respective node.
+
+![](https://github.com/dwwe2017/teamspeak-interface/blob/master/media/description/TSI%20-%20Server%20stats.png)
+
+### Extension / API-Interface
+
+* With the help of this extension you have the opportunity to create as many accesses to special functions from outside, such. For example, to access a forum to display a simple TS viewer. The live support voice server viewer was also implemented on this website using the API interface.
+*Supported are currently the most important request methods, such as querying information from an instance, adding additional users or the creation of new virtual voice server, and much more.
+* A range of currently possible actions and examples of how to use this interface can be found [here](https://github.com/dwwe2017/teamspeak-interface/wiki/API-Docs), in the corresponding documentation. Of course, the functionality is always extended and optimized.
+
+![](https://github.com/dwwe2017/teamspeak-interface/blob/master/media/description/TSI%20-%20API%20Interface%20(Extension).png)
+
+### Extension / Simple Bot
+
+* Among other things, this module allows you to set various rules and enforce them fully automatically, such as moving inactive clients to a specific channel (Auto-AFK).
+* Also useful are the possibilities with regard to sanctions, so clients who use an undesired nickname, for example, be prompted to change it and be banned if ignored by the voice server.
+* In addition to the features already mentioned, the Simple Bot also offers the option to freeze clients in the current channel, put them on hold for a certain period of time, or decide whether the voice server can be entered at all based on the client version or a MyTeamspeak ID.
+The protection of server or channel groups, as well as the use of various command line parameters via a client program are other features that can be realized with this extension.
+
+![](https://github.com/dwwe2017/teamspeak-interface/blob/master/media/description/TSI%20-%20Simple%20bots.png)
+
+### Extension / Channelgroups
+
+* Basically, the module provides all the functions needed to properly manage the channel groups of a virtual voice server. A handy overview page with an integrated search function in real time, as already presented for the server list, is also part of this to bring order to chaos and especially useful when many groups exist.
+* Click on the desired group to access the respective authorization menu, in order to be able to add, modify, set or remove a group icon from there. All permissions of the instance are supported, which can be imported and updated manually at any time.
+* In addition to the possibility of mass allocation / processing of multiple groups at the same time, of course, new channel groups can be created and copied.
+
+![](https://github.com/dwwe2017/teamspeak-interface/blob/master/media/description/TSI%20-%20Channelgroups.png)
+
+### Extension / Clients & Permissions
+
+* Unlike you may be used to, it is easily possible to give a variety of instance permissions to individual clients of the voice server as well.
+* Here, too, all clients stored in the database are listed in advance, clearly listed and including a practical search function.
+* Among other things, the option to edit a client directly from the list is particularly useful (see screenshot), so it is possible to assign server and channel groups without having to switch to the respective voice server interface. It is also possible to send and receive text messages (chat).
+* The execution of actions, such as As the deletion from the database, on several clients at the same time is of course also possible with this module.
+
+![](https://github.com/dwwe2017/teamspeak-interface/blob/master/media/description/TSI%20-%20Clients%20%26%20Permissions.png)
+
+### Extension / Filetransfer
+
+* First and foremost, this module provides you with an instrument that allows you to manage files the way you normally are used to.
+* As shown in the screenshot, the channels of the respective voice server are displayed as folders on the right side. With one click you get in the right window a list of the files of the respective channel.
+* The files can easily be deleted or downloaded via a context menu (right mouse button).
+* Screenshots or different image files can be easily opened with just one click as a preview without having to download them to the PC.
+* Moving files is easy via drag & drop and the upload function allows uploading multiple files at the same time.
+* Furthermore, this module allows you to remove, add and download individual, multiple or all icons of the respective voice server.
+
+![](https://github.com/dwwe2017/teamspeak-interface/blob/master/media/description/TSI%20-%20Files%20and%20Icon%20management.png)
+
+### Extension / Reseller management
+
+* Reseller Management is an extension reserved for commercial licenses. This module is particularly suitable for hosting companies who want to give their customers the opportunity to manage entire instances completely self-sufficient.
+* Resellers are special user accounts that in turn allow other users to access one or more voice servers of their assigned instance.
+* In the area of resources, the number of maximum creatable / manageable voice servers and slots per voice server and additional users can be limited.
+* In addition to the fixed allocation of instances, resellers can be given the opportunity to manage their own / private instances.
+* If necessary, resellers can be granted access to the functions of the API interface, and much more.
+
+![](https://github.com/dwwe2017/teamspeak-interface/blob/master/media/description/TSI%20-%20Reseller%20management.png)
+
+### Extension / Servergroups
+
+* Analogous to the extension for the management of channel groups, this module also has the functions already described in the previous description, with reference to the server groups of a virtual voice server.
+* In addition to previous descriptions, it should be mentioned that, among other things, it is possible to list all assigned clients of a specific group and perform so-called mass processing / assignments. For example, it is possible to assign selected groups at the same time to several clients at the same time, which can save a great deal of time with large structures.
+* Furthermore, you can also start processing from the menu of the assigned clients or send and receive text messages (chat) without having to change to the interface of the virtual voice server.
+
+![](https://github.com/dwwe2017/teamspeak-interface/blob/master/media/description/TSI%20-%20Servergroups.png)
