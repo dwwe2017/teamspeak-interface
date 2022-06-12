@@ -10,7 +10,7 @@ From a monthly [sponsorship](https://github.com/sponsors/dwwe2017) of only $ 5 y
 
 **Features and Description (Main System)**
 
-The Teamspeak interface is the ideal solution for anyone who wants to have their TeaSpeak or Teamspeak 3 server under control via the web. Whether for personal use, for example, to grant limited access to members of the Guild or as a professional hoster to provide the customer with an exclusive service, the TSI is designed and suitable for all areas. The licensing system is also based on the factor of value in terms of pricing in order to make it affordable for every user type.
+The Tea(m)speak Interface (TSI) is the ideal solution for anyone who wants to have their TeaSpeak or Teamspeak 3 server under control via the web. Whether for personal use, for example, to grant limited access to members of the Guild or as a professional hoster to provide the customer with an exclusive service, the TSI is designed and suitable for all areas. By default, the TSI is available in the following languages: *German, English, French, Spanish, Italian, Norwegian and Russian*.
 
 **The following features are available right from the start with a basic license:**
 
