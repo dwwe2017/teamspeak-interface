@@ -3,7 +3,7 @@
 
 ![AWS](https://codebuild.eu-central-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoieHFkWkVMN0VuNE9RKy83VW5pdlVTekRuNkd6YVBNYUtTVDEzcFdPRU0zbG9qbjZHN2I1WDBCYWZqTW1HaU54c1dYbzJkR2UvODV3RlllSnJKbHgxNE9ZPSIsIml2UGFyYW1ldGVyU3BlYyI6Ik1LdmtZaEpJVVBOekx3ZlAiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
 
-![TSI](https://github.com/dwwe2017/teamspeak-interface/blob/master/media/banner/tsi-banner.png)
+![TSI](https://github.com/dwwe2017/teamspeak-interface/blob/gh-pages/media/banner/tsi-banner.png)
 
 ### Complete product description
 [TSI - Tea(m)speak Interface - WEB SOLUTION #1 FOR TEASPEAK & TEAMSPEAK 3](https://dwwe2017.github.io/teamspeak-interface/)
