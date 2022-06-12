@@ -1,3 +1,5 @@
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
 # TSI - Tea(m)speak Interface | Web Solution #1 for TeaSpeak & Teamspeak 3
 **More than just a simple web interface for TeaSpeak and TeamSpeak 3 servers ...**
 
