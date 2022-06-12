@@ -21,7 +21,7 @@ _Please note that the scope of all functions is too large to list below, which i
 ### TSI Dashboard
 
 * Multifunctional and clear dashboard for efficient management of voice server instances. It supports both TeaSpeak and Teamspeak 3 servers.
-* Powerful role system for customizing the access rights of additional users to the TSI and virtual voice servers. Especially in this area, we have tried to implement everything very extensively, so that you are free to the smallest detail in terms of the design of the desired Gruppenhierachie.
+* Powerful role system for customizing the access rights of additional users to the TSI and virtual voice servers. Especially in this area, we have tried to implement everything very extensively, so that you are free to the smallest detail in terms of the design of the desired group hierarchy.
 * Managing additional users allows other people to access one or more voice servers. Authorizations can be individually differentiated using groups / roles. For example, you can assign a co-administrator to a specific virtual server or multiple virtual servers for which he or she only has permissions to manage server or channel groups through a predefined role.
 
 ![](description/TSI%20-%20Dashboard.png)
