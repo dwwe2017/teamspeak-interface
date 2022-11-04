@@ -1,0 +1,24 @@
+{
+    "name": "fadoe/date",
+    "description": "Library that extends the PHP date class",
+    "minimum-stability": "stable",
+    "type": "library",
+    "homepage": "https://github.com/fadoe/fadoe-date",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Falk Doering"
+        }
+    ],
+    "required": {
+        "php": ">=5.3.10"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "FaDoe\\Date\\": "src/"
+        }
+    }
+}
