@@ -1,0 +1,37 @@
+{
+  "name": "postitall",
+  "version": "1.1.0",
+  "homepage": "http://postitall.txusko.com/",
+  "authors": [
+    {
+      "name": "Javi Filella (@txusko)",
+      "email": "postitall@txusko.com",
+      "homepage": "http://txusko.com"
+    }
+  ],
+  "description": "Customizable sticky notes for the web.",
+  "main": [
+      "dist/jquery.postitall.js",
+      "dist/jquery.postitall.css"
+  ],
+  "moduleType": [
+      "globals"
+  ],
+  "keywords": [
+    "notes",
+    "sticky",
+    "jquery",
+    "javascript",
+    "postit"
+  ],
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "dist/jquery.postitall.ajax.js",
+    "dist/jquery.postitall.chromeManager.js"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}

@@ -1,0 +1,10 @@
+<?php //005dc
+// Copyright (c) 2020 DW Web-Engineering, all rights reserved.
+// Build: Fri Nov  4 05:06:05 UTC 2022
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted. Ensure that you use binary mode when transferring files with FTP and disable the 'TAR smart cr/lf feature' if using WinZIP\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
+?>
+E¿¦gD&b*“šUSÿ5³Ajïviç#•WÕ¢Ø˜*’ô)y_ƒY“d1y.¶r1òã‡¯10lş¾F-| â3½ÏàD
+ÈäĞÑ3K(ØUŞd/Í+fRúè}m\‚ï‘”ƒ€Ó6áC­õ!^a¦›…¶û@ÅŞ¼µº¦zD DR4d.Q·&MŠ“¸^±Â¹î hz¸ÈUê§xğárÌ£o€¦V9ÔÍ”ˆµşT¾¿Àß>.v¨vvL`c­QÖg_§œÉT–¥3ä±_ïr
+h—€'1?¾¹ş®ùîëƒäĞ:«Ï"ÿ0ŸÕoYNuvjÛsVoüåüóğ[È…{'ZÅ¡.®ËºûÒŸ(…{ø(ï	°¯wOã#iD¯{…õJP›VR¹ã§!Swó@-›Åıå£$LU'•ÈßàbE3Q§õ—)!ãÕ=Z óÆÀ$sQò)ÆÆ|9¢9Ä„=%ë”§A
+ıÏ¨Ï›³­„ú~`3XJŸ‘‚—¨·2ßÍÏ´h=A¼R÷äSd|5¼Øı«áQFîU0Î¿¯FÇ8MRĞ“õXsÚz"§YÃEUvW}’Æ
+³¨Dô”©3[•ã]ÿÀB$K\íC]Da¾lÊ
