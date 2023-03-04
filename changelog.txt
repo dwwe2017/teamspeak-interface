@@ -1,0 +1,1393 @@
+
+===============================================================================
+                        Tea(m)speak Interface - CHANGELOG
+                          Copyright DWWE - Daniel W.
+                 https://github.com/dwwe2017/teamspeak-interface
+===============================================================================
+   + Added feature or noticeable improvement
+   - Bug fix or something removed
+   * Changed or Information
+   ! Important - Take note!
+===============================================================================
+
+=== Release for 1.3.0.28 - 03.03.2023 ===
+! The required PHP version for Composer packages has been increased to PHP 7.4
+- An error has been fixed that occurred when the update page was accessed under a web space
+- Fixed an bug that caused the error "File(/.htaccess) is not within the allowed path(s)"
+- Updated the API documentation link in the API Interface extension
+
+=== Release for 1.3.0.27 - 27.11.2022 ===
+! Ioncube version 12 (cerberus) is now used to encode the source code
+- A bug has been fixed which caused licenses not to be read in very rare cases and an error to occur when entering the license key
++ When sponsored via GitHub, the profile picture and the text "Sponsored by .." now appear in the dashboard navigation menu
++ Every user with a hosting license now has the option to set their own support link in the settings. This then replaces the native link of the help button at the top right of the navigation bar
+* The language files have been adjusted and optimized
+* Vendor update
+
+=== Release for 1.3.0.26 - 13.10.2021 ===
+- An error has been fixed that caused the forwarding to license activation fails if the TSI can only be reached via a port other than 80/433
+- An error has been fixed that caused the host banner URL is always automatically set to HTTP if you want to display a time in the host banner
+- An error has been fixed which led to the fact that the cron jobs via crontab do not work when operating with port and domain
+* Updated doctrine/orm from v2.5.5 to 2.6.6
+* Updated webmasters/doctrine-extensions from 5.0.0 to 6.0.0
+* Updated hammermaps-dev/phpfastcache from 7.0.5.3 to 7.0.10
+* Updated phpfastcache/phpssdb from 1.0.1 to 1.1.0
+* Updated contributions
+
+=== Release for 1.3.0.25 - 30.05.2021 ===
+- An error has been fixed that caused the TS viewer to no longer work on TeaSpeak
+- Fixed a bug that caused snapshots to be placed in the wrong directory or not created during automatic creation
+- A bug has been fixed that resulted in icons in the server list not using the correct path
+- Bugfix for RFC2397 does not allow unlinking
+- Bugfix: scandir(..): failed to open dir: No such file or directory
+- Bugfix for Parameter must be an array or an object that implements Countable
++ Updates via package servers have been deactivated for operation in the Docker container
++ When restarting a container, or after an update if the TSI has already been set up, an automatic DB update is now carried out every time
++ Improved creation of cron.php for running cronjobs with crontab
++ The initialization file for cron jobs is now moved to the data folder when the TSI is operated in the Docker container in order to be persistent
++ Added env variables to dockerfile
++ Improved icon import for virtualserver
++ Implemented manual updates for modules if a version.txt file exists in extension image dir
+* The PHP version of the Docker container has been changed to 7.3.26
+* The "storage" folder has been adapted for operation in the Lambda environment or container environment
+* A link to the Docker hub was improved
+* Very time the container is updated or started, the hypertext access is also restored
+* The TSI now uses a uniform data path "data" for changeable files or caching
+* Improved handling of checksum file for auto db updates
+* Improved icon import for instances
+* Improved installation script
+* Added extension packages to docker image
+
+=== Release for 1.3.0.24 - 09.01.2020 ===
+- Fixed a bug that caused the JavaScript cache to not be properly cleared when trying to do so in the cache settings
+- Fixed a bug that caused the CSS cache to not be properly cleared when trying to do so in the cache settings
+- Fixed a bug that caused the system cache to not be properly cleared when trying to do so in the cache settings
++ Super administrators and resellers can now edit assigned users and resellers from the server list
+
+=== Release for 1.3.0.23 - 27.12.2020 ===
++ In addition to the server names, the IDs of the virtual servers are now displayed when creating and editing users and resellers
+* The option in the TSI security settings for HTTPS forwarding is no longer available in containers
+* If the channel style is changed in the TS interface, a corresponding loading screen now appears
+* Ease of use during the installation process has been improved
+
+=== Release for 1.3.0.22 - 27.12.2020 ===
+- When installing extensions, the build version of the TSI main system is overwritten
++ Cron jobs can also be controlled within a Docker container using an API / crontab
+
+=== Release for 1.3.0.21 - 24.12.2020 ===
++ The TSI has been slightly optimized for use with Docker
+- An error has been fixed that caused the HTTP error 404 to appear when the license term was reached
+- Missing translations have been added
+
+=== Release for 1.3.0.20 - 02.10.2020 ===
++ Implemented LogQuery instead of LogView for TeaSpeak
++ PopUp Viewer for virtual servers was implemented to be able to take a look at several servers at the same time
++ The authorization "tsi_virtualserver_popup_view" has been added to the role administration in order to be able to restrict the access to the PopUp view
+
+=== Release for 1.3.0.19 - 19.09.2020 ===
+- Numeric values are sorted incorrectly
++ Rename channelgroups and servergroups
++ Channel properties "channel_conversation_history_length" and "channel_flag_conversation_private" on TeaSpeak servers can now be edited
++ The authorizations "tsi_virtualserver_client_modify_serveradmin" and "tsi_virtualserver_client_modify_serverquery" have been added to the role administration in order to be able to further restrict the display of the client DB list
++ If the display of query clients was deactivated in the client DB list, no serveradmins, severquery or unknown query clients are displayed on TeaSpeak servers
+
+=== Release for 1.3.0.18 - 30.08.2020 ===
+- The exception error "Array to string conversion" appears if you want to use the update service
+- When creating a new role as a reseller for the first time, an exception error may occur
+- The message "Undefined index: HTTP_ACCEPT_LANGUAGE" often appears in the error log
+
+=== Release for 1.3.0.17 - 28.08.2020 ===
+! The authorization level of roles now also restricts access to client, channel or server group rights
+- You will no longer be logged off if the virtual server of a user cannot be reached and you switch to his view
+- Roles can no longer be deleted if users or resellers are still assigned
+- The authorization "channel_icon_id" now allows users to edit channel icons as required
++ The restriction of the role level now also applies to channel authorizations
++ The dependency maximebf/debugbar has been removed
+* The user experience for resellers has been improved
+
+=== Release for 1.3.0.16 - 23.08.2020 ===
+! The role permission "tsi_virtualserver_modify" has been added, which restricts or allows editing of assigned virtual servers
+! The role permission "tsi_virtualserver_channel_modify" has been added, which restricts or allows editing channels on assigned virtual servers
++ The representation of role permission that represent write access are now highlighted
++ Virtual server templates can now be copied
+* Important! New role authorizations must be granted after the respective update so that the permissions can be used!
+* The handling and the user experience of the template administration for creating virtual servers have been improved
+* Improved the user experience when adding and editing instances
+
+=== Release for 1.3.0.15 - 21.08.2020 ===
+- Backup cleanup does not work using a cronjob
++ Permissions can now be filtered in the role management
++ Roles can be copied
+* It is now possible to create multiple templates via the server interface; templates of the same name are now automatically given a consecutive number
+* When creating or editing roles, security-relevant permissions are now pointed out before they are saved
+* Security-relevant permissions are now highlighted in red in the role management
+
+=== Release for 1.3.0.14 - 19.08.2020 ===
+- It is now correctly checked whether the PHP library FreeType is installed in order to be able to display the time in the host banner
+- ATHP-Link is not recognized if you want to add an instance after the installation
++ Option to preset and edit the language for users and resellers
+* Small improvements regarding the user interface
+* The process of the simple bot now also works without ionCube on the OS
+
+=== Release for 1.3.0.13 - 12.08.2020 ===
+- The chat function for channels and clients on TeaSpeak servers has been deactivated, as this is apparently no longer supported
++ A maximum number of backup files per virtual server can now be specified via the system settings. If this limit is exceeded, the oldest files for the respective virtual server are deleted
+* The sorting of backup files has been optimized, the list now begins with the most recent backup file, and the most recent backup is now marked
+
+=== Release for 1.3.0.12 - 11.08.2020 ===
++ The function for editing passwords has been activated for TeaSpeak
++ The validity of MFA email one-time passwords during the login process can be specified via the security settings
+* Make email MFA setup easier to understand
+
+=== Release for 1.3.0.11 - 10.08.2020 ===
+- Infinite redirection when a user's virtual servers are no longer available
+- The real-time content for server settings in the server interface cannot be called up
+- The server list for users appears empty under certain circumstances and the cache is not automatically refilled
+
+=== Release for 1.3.0.10 - 01.08.2020 ===
+- There is no line break for very long entries in the ban list
+- Typo in the security settings
+- Display error of the instance symbols
+- Incorrectly configured cache drivers can no longer be changed
++ Instance labels
++ Multi-factor authentication
+* Improve the display of breadcrumbs
+* Execution of cron jobs via API interface has been optimized
+
+=== Release for 1.3.0.9 - 16.07.2020 ===
+- The error "Undefined index: prefix" should no longer occur
+- The error "realpath (): open_basedir restriction in effect." should no longer occur
+* All zoom attributes have been removed from the styles, a corresponding note in the browser should no longer appear
+* Cookies now use the SameSite attribute
+
+=== Release for 1.3.0.8 - 15.07.2020 ===
+! The TS3 Explorer has been revised and is now based on the jQuery plugin planetteamspeak/jquery-ts3viewer
+- It is now prevented that query clients are moved in TS Explorer because this is not possible
++ Additional options for moving have been added to the context menu for channels in TS Explorer
++ Additional options for moving have been added to the context menu for clients in TS Explorer
++ It is now possible to move several clients into a channel at the same time using the channel context menu and the menu item "Move here"
++ Permissions "tsi_virtualserver_client_move" and "tsi_virtualserver_channel_move" have been added to be able to restrict the use of TS Explorer more
++ Permissions "tsi_ts_explorer_live_mode" and "tsi_ts_explorer_auto_update" have been added to restrict access to live mode and the auto-update function of TS Explorer
++ Individual levels for TeaSpeak snapshots (Using a new configuration variable "tea_serversnapshotcreate_version" in the file "config/default-config.php", a corresponding version (0, etc.) for the creation of snapshots with TeaSpeak can be defined)
++ The new auto-update option for TS Explorer now enables live mode
++ Implemented encoding for chat protocols
+* The display of music bots and clients in TS Explorer has been improved for TeaSpeak Server
+* The size and display of the TS Explorer have been improved
+* The styles of all included style packages have been improved
+* Updated planetteamspeak/ts3-php-framework (1.1.33 => 1.1.34)
+* The management of icons has been optimized
+* Typos have been improved
+
+=== Release for 1.3.0.7 BETA - 08.07.2020 ===
+- The background image in the "Sunset" style package is now displayed correctly
+- TeaSpeak no longer supports protocol management via server query
++ By clicking on the respective port number of a virtual server in the server list, a connection is now automatically established in the respective client program
+* The display of the modal window for Teamspeak 3 protocols has been improved
+* ionCube installation wizard updated, PHP 7.4 is now supported
+* The display of tables for the style packages Hurricane and Sunset have been improved
+* The build number of the current version can now be viewed in the "Manage licenses" menu
+* Minor corrections in the display of modal windows
+
+=== Release for 1.3.0.6 STABLE - 11.06.2020 ===
+* Support for video as background has been improved
+* Code cleanup
+
+=== Release for 1.3.0.5 BETA - 08.06.2020 ===
+* Among other things, add various notes after importing an image that rights and icons have to be updated
+* Icons are uploaded individually on the client side via Ajax, so the number of files to be uploaded will be irrelevant in the future and the error message "File transfer limit reached" no longer appears
+* Improved download of backup files
+
+=== Release for 1.3.0.4 BETA - 06.06.2020 ===
+- Fixed a bug that prevented Simple Bots from starting
+- Bot support now works correctly with an SQlite database
++ The security of the SQLite database has been improved
+
+=== Release for 1.3.0.3 BETA - 05.06.2020 ===
++ The mode for host messages can be edited via the server interface
+- A few spelling mistakes have been corrected
+* All vendor dependencies have been updated
+
+=== Release for 1.3.0.2 BETA - 04.06.2020 ===
+! An SQL database connection was implemented which now enables the use of the TSI without an additional external DB. (However, we recommend using MySQL from 5 additional user accounts)
+- The error message "a non well formed numeric value encountered" in the server quick menu should no longer appear
+* Improved forwarding in the event that no instance is available for additional users
+* The license terms have been updated
+* All vendor dependencies have been updated
+
+=== Release for 1.3.0.1 BETA - 02.06.2020 ===
++ The currently defined style package is now automatically adopted by extensions during the installation
++ ionCube loader-wizard has been updated
++ ionCube BETA loader for PHP 7.4 has been added
+* Improved updater
+* All vendor dependencies have been updated
+
+=== Release for 1.3.0.0 BETA - 20.05.2020 ===
+! The license system is now based on ionCube technology, which also saves performance, since the validity no longer has to be checked by the TSI itself
+! The update manager was completely extracted from the architecture of the TSI main system and now acts 99% autag to prevent errors that have arisen due to file complications in the past
+! The installation process has been optimized. It is not checked for the version of the database now, because this has led to unavoidable difficulties in the past
++ The update cache is no longer updated every day but every hour. This can now be done manually by deleting the temporary files
++ The update functions are now also available during a demo version
++ When installing extensions, the style is now also adopted (for remote installation only)
++ A new display style called "Hurricane" was created, which is now included as standard
++ The display style "Flat-BlackOrange" has been completely revised and is now called "Sunset"
++ The display style "Flat" has been improved
+* All Javascript libraries have been updated where possible
+* The Javascript libraries were reduced by non-minimized files where possible
+* All vendor dependencies have been updated
+
+--------------------------- HURRICANE RELEASE ---------------------------------
+
+=== Release for 1.2.0.26 BETA - 24.04.2020 ===
++ The handling for stopping simple bots has been improved
+* When deleting virtual servers, the corresponding simple bots are now also removed if they exist
+
+=== Release for 1.2.0.25 STABLE - 23.04.2020 ===
+- Missing language variables have been added
+* Code cleanup
+
+=== Release for 1.2.0.24 STABLE - 23.04.2020 ===
+=== Release for 1.2.0.24 BETA - 20.04.2020 ===
++ To validate email addresses, the MX records of the specified domain are now also checked.
+  This check can be deactivated using the "mx_record_validation" option and the value false
+  in the default-config.php if necessary.
++ The character limit for domains in email addresses has been removed
++ A new cronjob service for the automatic creation of TSI backup packages has been added
+
+=== Release for 1.2.0.23 STABLE - 23.04.2020 ===
+=== Release for 1.2.0.23 BETA - 18.04.2020 ===
++ The possibility has been implemented to use an SMTP connection for sending e-mails
++ E-mail addresses with a 4-digit TLD can now also be used
+* Updated doctrine/annotations (v1.8.0 => 1.10.1)
+* Updated behat/transliterator (v1.2.0 => v1.3.0)
+* Updated gedmo/doctrine-extensions (v2.4.38 => v2.4.39)
+* Updated wixel/gump (v1.5.7 => v1.11.0)
+* Updated matthiasmullie/path-converter (1.1.2 => 1.1.3)
+* Updated matthiasmullie/minify (1.3.62 => 1.3.63)
+* Updated symfony/polyfill-mbstring (v1.13.1 => v1.15.0)
+* Updated symfony/translation (v5.0.2 => v5.0.7)
+* Updated nesbot/carbon (2.28.0 => 2.32.2)
+* Updated symfony/polyfill-php73 (v1.13.1 => v1.15.0)
+* Updated symfony/console (v4.4.2 => v4.4.7)
+* Updated psr/log (1.1.2 => 1.1.3)
+* Updated symfony/var-dumper (v3.4.36 => v3.4.39)
+
+=== Release for 1.2.0.22 STABLE - 18.04.2020 ===
+=== Release for 1.2.0.22 BETA - 07.02.2020 ===
+- The sporadic error "Call to a member function getText() on null" has been fixed and should no longer occur
+
+=== Release for 1.2.0.21 BETA - 25.01.2020 ===
+- Removed transition from CSS to prevent unwanted zoom effects
+
+=== Release for 1.2.0.20 BETA - 21.01.2020 ===
+! Switch to PHP 7.3 as the recommended runtime environment
++ Implementation/improvement of the system's own checking mechanisms for write and access rights for the required directories
++ Automatic escaping for snapshot files
+- Creation of music bots (tea) only possible after reloading
+
+=== Release for 1.2.0.19 STABLE - 09.01.2020 ===
+- Fixed a bug that caused HTTPS redirects to be created incorrectly
+
+=== Release for 1.2.0.18 STABLE - 09.01.2020 ===
++ Bot support has been improved in terms of runtime stability
+* Code inspection and cleanup
+
+=== Release for 1.2.0.17 BETA - 04.01.2020 ===
+- Fixed a bug that prevented icons larger than 16x16 pixels from being uploaded. These image files are now automatically scaled
+
+=== Release for 1.2.0.16 BETA - 01.01.2020 ===
+- Fixed a bug that caused simple bots to end sporadically
+* The logging was switched to the monolog/monolog dependency
+* Automatic .htaccess protection has been improved
+* Password recovery is now only possible if the PHP extension "mail" is available
+- Fixed a bug that caused the cronjob script to be created incorrectly
+
+=== Release for 1.2.0.15 BETA - 05.12.2019 ===
+* Vendor update
+* Code inspection and cleanup
+
+=== Release for 1.2.0.14 BETA - 02.12.2019 ===
+- Fixed a bug which under certain circumstances meant that error pages could not be rendered correctly
+- Fixed an issue that caused the summer or winder time in the host banner to be ignored
+- Fixed an issue where updating statistics pages caused the loading screen not to disappear automatically
+* Vendor update
+* Code inspection and cleanup
+
+=== Release for 1.2.0.13 BETA - 13.07.2019 ===
++ A new options menu has been added to the settings menu for adaptation in order to be able to customize the URL of the support button in the status bar. These business customizations will be further expanded soon and will only be available with a CU license
+* Vendor update
+* Code inspection and cleanup
+
+=== Release for 1.2.0.12 BETA - 30.06.2019 ===
+- Fixed a bug that caused the JS / CSS cache to not hash
++ Updates for Teamspeak 3 Server from version 3.9.0 implemented
+* Vendor update
+* Code inspection and cleanup
+
+=== Release for 1.2.0.11 STABLE - 28.05.2019 ===
+* Change the license URL to the high availability servers
+* Improved image recognition and added mime type testing
+* Vendor update
+* Code inspection and cleanup
+
+=== Release for 1.2.0.10 STABLE - 11.05.2019 ===
+! In the settings for the Client & Permission extension, you can now configure how many clients can be loaded and output to the clipboard at once
++ After initial licensing or when no update source is selected, a stable server is now automatically set
++ For developers, a dev console has been added, which will be expanded from now on
+- Fixed a bug that caused the virtual server not to be able to be created from a template if the image was created by a virtual server that had an icon id
+- Fixed a bug that caused the time in the hostbase to be misaligned
+* The graphic file checking function has been improved
+* Vendor update
+* Code inspection and cleanup
+
+=== Release for 1.2.0.9 STABLE - 18.04.2019 ===
+! A new feature has been added to the server interface so that the time can be displayed in any host banner
++ A new "tsi_virtualserver_hostbanner_cronosize" permission has been added to Role Management to restrict the new feature of the time display in the host banner when needed
++ Navigation between different virtual voice servers of an instance has been improved
+* The installation process as well as the database template has been improved
+* Improved installation sql template
+* Internal license issue has been improved
+* Updated hammermaps-dev/phpfastcache (7.0.10 => 7.0.5.1)
+* Updated dragonmantank/cron-expression (v2.2.0 => v2.3.0)
+* Updated doctrine/collections (v1.5.0 => v1.6.1)
+* Updated doctrine/annotations (v1.6.0 => v1.6.1)
+* Updated gedmo/doctrine-extensions (v2.4.36 => v2.4.37)
+* Updated symfony/translation (v4.2.4 => v4.2.7)
+* Updated nesbot/carbon (2.16.0 => 2.17.0)
+* Updated illuminate/contracts (v5.8.4 => v5.8.12)
+* Updated illuminate/support (v5.8.4 => v5.8.12)
+* Updated symfony/console (v4.2.4 => v4.2.7)
+* Added kus/php-image to project
+* Final Code Inspection and Cleanup
+
+=== Release for 1.2.0 RC9 [BUILD 8] - 06.04.2019 ===
+! Channel spacers can now be created via the menu option of the TS Explorer
++ The permission "tsi_virtualserver_channel_spacer_create" has been added to the role management in order to restrict the new function individually
++ Related language variables related to the new feature have been added
+* Code cleanup
+
+=== Release for 1.2.0 RC8 [BUILD 7] - 30.03.2019 ===
+- Fixed a bug that caused the Simple Bots not to start when the OS and Webspace were handling different PHP handlers and the OS did not have a valid ionCube Loader installed
+* Code cleanup
+
+=== Release for 1.2.0 RC7 [BUILD 6] - 23.03.2019 ===
+! Voice server instances can be filtered by resellers using a new drop-down menu in the dashboard overview
+- Missing language variables were added
+- An error was fixed which led to the mandatory selection of an icon for instances
+* Code cleanup
+
+=== Release for 1.2.0 RC6 [BUILD 5] - 23.03.2019 ===
+! Icon management has been extended to include extension modules. All TSI icons can now be easily transferred to the respective voice server, for example with the help of the module server files
++ Added PHP Extension GD library to system requirements
++ When uploading icons is now checked whether the required PHP extension GD Library exists
++ Icon transfer improved, if an error occurs due to a limitation by the voice server, it will now be displayed
+- Fixed a bug that caused the active Simple Bots not to be detected
+- Fixed a bug that caused the icons of the server list not to be displayed
+* In order to save performance, the systematic change of session IDs can now be deactivated
+* Vendor update
+
+=== Release for 1.2.0 RC5 [BUILD 4] - 17.03.2019 ===
+! A full icon management has been added to the adjustment menu in the settings panel
++ The package gumlet/php-image-resize has been added to the dependencies
+* Vendor update
+
+=== Release for 1.2.0 RC4 [BUILD 3] - 10.03.2019 ===
++ The testing of packages has been improved
+- Fixed a bug that caused the statistic data labels to be visible only at the bottom right
+- Fixed an issue that prevented extensions from being installed via One-Click
+- An error has been fixed which caused the package list to be displayed incompletely
+* Updated license agreements
+
+=== Release for 1.2.0 RC3 [BUILD 2] - 02.03.2019 ===
+! Each voice server can now be assigned an individual icon
++ The use and management of icons has been greatly improved
++ 99 new funny, cute and professional icons have been added
++ The role management icon option has been optimized
+- Fixed a bug that caused the export of users or roles to fail
+* Vendor update
+
+=== Release for 1.2.0 RC2 [BUILD 1] - 22.02.2019 ===
++ The modularity with regard to extensions has been improved
++ For occasional extensions, there is now the possibility to configure in the settings menu of the TSI under the menu item "Extensions"
+- An error has been fixed which caused the not relevant exceptions to appear in the error log
+- Incorrectly used language packs have been corrected
+* Vendor update
+* Code cleanup
+
+=== Release for 1.2.0 RC1 - 14.02.2019 ===
+! A new Cache-System has been added, supported drivers: [Files,Apc,Apcu,Xcache,Wincache,Memcache,Memcached,MongoDB,Predis,Redis,CouchBase,Cassandra,Couchdb,Riak,Ssdb,Zend Disk,Zend Shared-Memory] (Many thanks to @hammermaps for the support)
+! The license system has been optimized, the user now receives a so-called waiting period after expiration of the license term
+! It is no longer necessary to deposit demo serial numbers, they are now assigned by the license server
+! It is no longer necessary to log in to the package server, the options in this regard were completely removed. Instead, you can now easily select any update source in the system settings
+! Included extensions no longer need to be manually installed and licensed but can be installed via One-Click
+! The complete update architecture has been redesigned. During an update, the system updates only changed files
+! TeaSpeak Server customizations have been made to ensure compatibility, but some music-bot features are currently no longer supported because they have been removed from TeaSpeak
+- Fixed a bug that caused the list of available file formats not to be displayed during installation (Step 4)
+- Fixed minor bugs that were noticeable during optimization, such as: Eg missing translations or unescapted text outputs
+- Fixed a bug that sporadically caused existing instances not to be processed when they were unreachable
++ The latest version of the TeamSpeak 3 server is now being retrieved from versions.teamspeak.com
++ The error handling has been completely revised and improved
++ Under certain circumstances it is now possible to send direct reports to the support in case of an error
++ In addition to the well-known main log now also an error log is kept, but this can only be viewed via directory. Fatal errors, warnings and exceptions are recorded there
++ A new permission has been added to the role administration (tsi_extended_error_report), which grants the right to be able to see all details about the process and the system in case of an error
++ It is now possible to send text messages to multiple virtual servers at the same time
++ A new permission has been added to the role management (tsi_virtualserver_ban_delete_super_admin), which limits the right to delete created banners from super administrators. If the right is denied, these bans can only be removed by super administrators
++ Add a new dynamic js/css compressor for the new cache-system (EXPERIMENTAL)
++ The complete Javascript has been optimized, improved and is now cached
++ The limit for the maximum number of cached clients has been increased from 50 to 100 (access via the Clients module, for example)
++ A new file has been added to the program, which is located in the installation folder and, in the event of an error, provides information about the system in relation to the requirements
+* Added wixel/gump to Project
+* Added matthiasmullie/minify to Project
+* Vendor dependencies have been updated
+* Code cleanup
+
+=== Release 1.1.6 STABLE - 06.10.2018 ===
+* Updated symfony/console (v4.1.5 => v4.1.6)
+
+=== Release 1.1.5 STABLE - 04.10.2018 ===
+! An interface has been implemented for the login process via TSI Plesk extension
+! The verification methodology of TSI backup packages has been revised, it is no longer possible to import any ZIP archive. Existing TSI backup packages unfortunately lose their validity and can no longer be imported
++ When selecting the files to be imported, the encryption type is now automatically selected
++ TSI backup packages can now be used. If such a package is created or imported, it is possible to restore the icons as well as the server snapshot
++ For TeaSpeak Server, a workaround was implemented to identify the new server ID after snapshot
++ SQL installation template has been optimized
+* Updated symfony/console (v4.1.4 => v4.1.5)
+
+=== Release 1.1.5 BETA - 01.10.2018 ===
++ SQL installation template has been optimized
+* Updated symfony/console (v4.1.4 => v4.1.5)
+
+=== Release 1.1.4 BETA - 27.09.2018 ===
+! An interface has been implemented for the login process via TSI Plesk extension
+
+=== Release 1.1.3 BETA - 19.09.2018 ===
+! The verification methodology of TSI backup packages has been revised, it is no longer possible to import any ZIP archive. Existing TSI backup packages unfortunately lose their validity and can no longer be imported
++ When selecting the files to be imported, the encryption type is now automatically selected
+
+=== Release 1.1.2 BETA - 17.09.2018 ===
++ TSI backup packages can now be used. If such a package is created or imported, it is possible to restore the icons as well as the server snapshot
++ For TeaSpeak Server, a workaround was implemented to identify the new server ID after snapshot
+
+=== Release 1.1.1 STABLE - 16.09.2018 ===
+- Fixed a bug that caused not the correct updates to be loaded
+
+=== Release 1.1.0 STABLE - 11.09.2018 ===
+! Complete compatibility of all functions now also for TeaSpeak servers
+! Upgrading your TeamSpeak servers to 3.2.0 (build >= 1525708231) is recommended
+! An extensive cache system has been implemented that minimizes the number of query requests and the loading speed of the content
+! Two configuration options have been added to the system settings to set the cache runtime and the caching strategy
+! Full support for reseller management has been implemented
+! Bot support has been significantly improved. Old configuration files are no longer valid, so a reconfiguration of all already existing bots is necessary
+! Minimum system requirement has been raised to PHP 7.1, older versions are no longer supported
+! The entire system now uses the ionCube technology and requires the ionCube loader to be able to run
+! Reseller support has been improved. Resellers can now also use the API interface to manage assigned or owned instances when the right has been granted
+! Support for the API interface has been improved and compatibility with TeaSpeak has been optimized
+! Super administrators and resellers can now view the interface from the point of view of the TSI user and log in to the user's account via a new action button in the user list
+! Super administrators can now view the interface from the point of view of the reseller and log in to the user's account via a new action button in the reseller list
+! For web user accounts, the maximum number of adjustable slots can now be set. The prerequisite for this is that the permission "virtualserver_maxclients" has been granted for the processing of virtual servers
+- Fixed errors in file transfer support
+- The creation of incorrect paths for hostbanners has been fixed
+- Fixed an issue that prevented Simple Bots from starting
+- Bugfix for 'Undefined variable: btruns'
+- Fixed a bug that caused no TSI users to be created or edited when one or more instances were offline
+- Incorrect translations have been corrected
+- Fixed an issue that caused users to be assigned only one instance to see only a white page if that instance was offline. From now on, users whose instance is offline will be forwarded to the next possible instance if available or automatically logged out
+- Fixed a bug that caused text messages in modal windows not to be received
+- Fixed a bug that caused virtual servers to be played under an incorrect cache id after the session ended
+- An error has been fixed which led to the message "Undefined variable: data" in the server interface
+- The error that instance and server data was cached under wrong cache ids should now no longer occur
+- Fixed a bug that caused path statements related to cronjobs to be generated incorrectly when the TSI is in a subdirectory
+- The cause for the error that instance and server data were cached under wrong cache IDs could now be identified and completely fixed
+- Fixed a bug that caused only an icon to be displayed on TeaSpeak servers in the server list
+- Testing for new versions of instances should now work properly
+- A display error in the Server Quick menu has been corrected
+- When updating icons (servers), the cache should now also be updated server-wide
+- Intelligent multilingualism can now only be used in maintenance mode or if the system has no TSI users except Super Administrator to avoid file access errors
+- Fixed an issue where the case of TeaSpeak tokens was ignored
+- Fixed a bug that caused users to be unable to log in while the maintenance mode was active
+- Fixed a bug that caused the option to create music bots not being displayed when the Server Interface was first called on TeaSpeak servers
++ Serial numbers can now be easily exchanged without having to deactivate the license beforehand
++ The performance and speed of querying servers has been significantly improved
++ Query connection using IPv6 address has been implemented
++ Compatibility for TeaSpeak Servers has been improved
++ Descriptions during the installation have been improved
++ Compatibility for TeaSpeak Servers has been improved
++ Improved exception error handling
++ In addition to IPv4 and IPv6, the host name can now also be used for instances
++ Bot support for TeaSpeak Server has been improved
++ Error handling for simple bots has been improved
++ To better distinguish the server platform, icons have been added to the instance selection in the navigation menu
++ Via the context menu of the channels in the TS Explorer music bots can now be created (only for TeaSpeak server)
++ Music bots can now be controlled via the server interface (only for TeaSpeak server)
++ Permissions have been added to role management
+("tsi_virtualserver_music_bot_create", "tsi_virtualserver_music_bot_delete", "tsi_virtualserver_music_bot_queue_add",
+"tsi_virtualserver_music_bot_action", "tsi_virtualserver_music_bot_queue_rem", "tsi_virtualserver_music_bot_player")
++ A button has been added to the controllbar that shows the status of the cache and allows it to be updated
++ Role Management has been added a new permission (tsi_cache_dedicated_update) to control access to the manual cache update
++ A selection box for icons has been added to the setting options of the channel creation
++ Cache system has been significantly improved
++ The caching strategy "minimal caching" has been added to the system settings
++ The persistence of server query connections has been improved
++ The status identification of the chat function has been improved
++ Avatars are now also displayed when the corresponding client is offline
++ Improved error handling
++ The "Created at" column in the server list has been replaced by "Running since"
++ The functions in the server list to start or stop servers have been optimized
++ The functions in the server list for changing the autostart settings have been optimized
++ The caching system has been optimized
++ Update management has been improved
++ The TeaSpeak music bot player now supports streaming content
++ The "Created at" column in the server list has been replaced by "Running since"
++ The functions in the server list to start or stop servers have been optimized
++ The functions in the server list for changing the autostart settings have been optimized
++ The caching system has been optimized
++ Update management has been improved
++ Virtual servers can now also be started or stopped via the status button in the quick menu
++ Resellable instances are now marked as such for Resellers
++ Persistence of system cron jobs has been improved
++ The connection check for instances has been improved
++ The system cronjob for the autostart of simple bots has been optimized
++ At the request of some users, the default nickname of the Query Client has been changed, this nickname no longer contains the IP address
++ Caching system has been optimized
++ Instances for whose server software an update is available are now marked with a red corner on the dashboard
++ The display of the active clients from the Server Quick menu has been added to the server list
++ However, users who are granted the tsi_virtualserver_create_from_template privilege but have not the tsi_virtualserver_create privilege can now create virtual servers from the template
++ Bot support has been significantly optimized in terms of database utilization
++ Functions have been added to export or import single or multiple users
++ The export and import function for user roles has been optimized
++ If the fields Server IP and Query Port are left empty when adding instances, the default values ​​are automatically adopted
++ Login process has been optimized
++ License management now provides information on the number of manageable instances and web users
++ The respective license is now displayed in the header bar
++ The package manager has been optimized with regard to the installation of manual updates
++ An option has been added to the system settings to put the TSI in a maintenance mode
++ Bot support has been improved
++ Support for reseller management has been improved
++ Support for the API interface has been improved
++ Locally executable ionCube loaders for linux (64-bit) and windows (64-bit) have been added to the system
++ Error handling has been improved
++ Bot support has been greatly improved
++ The bot configuration can now also be changed and saved while a simple bot is active
++ The button for starting a Simple Bots now remains disabled until a configuration has taken place and this has been saved
++ Multilingual concept has been optimized
++ French and Dutch language pack added
++ The update process and its presentation has been optimized
++ Before an update can be carried out, it is now checked whether the value php max_execution_time is sufficient
++ API support has been improved
++ Persistence for database changes during an update has been improved, it should no longer happen that you are automatically logged out after an update
+* The new functions of the buttons in the Quick menu of virtual servers are now subject to the respective role permissions as intended
+* The flat style has been optimized. The link to the reseller login no longer appears in white
+* Some language variables have been added and corrected
+* The DNS license validation cache has been disabled
+* Contributions have been updated
+* Code cleanup
+* Updated curl/curl (1.9.1 => 1.9.3)
+* Updated symfony/console (v3.4.11 => v4.1.4
+* Updated doctrine/instantiator (1.0.5 => 1.1.0)
+* Updated doctrine/inflector (v1.2.0 => v1.3.0)
+* Updated doctrine/collections (v1.4.0 => v1.5.0)
+* Updated doctrine/cache (v1.6.2 => v1.8.0)
+* Updated doctrine/annotations (v1.4.0 => v1.6.0)
+* Updated doctrine/common (v2.7.3 => v2.8.1)
+* Updated doctrine/dbal (v2.5.13 => v2.6.3)
+* Updated webmasters/doctrine-extensions (5.2.0 => 5.3.0)
+* Updated planetteamspeak/ts3-php-framework (1.1.32 => 1.1.33)
+* Updated gedmo/doctrine-extensions (v2.4.35 => v2.4.36)
+* Updated symfony/debug (v3.4.12 => v3.4.14)
+* Updated symfony/polyfill-mbstring (v1.8.0 => v1.9.0)
+* Updated symfony/console (v3.4.12 => v3.4.14)
+* Updated symfony/debug (v3.4.11 => v3.4.12)
+
+=== Release 1.0.67 (RC21/1.1.0) BETA - 11.09.2018 ===
++ Persistence for database changes during an update has been improved, it should no longer happen that you are automatically logged out after an update
+* Some language variables have been added and corrected
+
+=== Release 1.0.66 (RC20/1.1.0) BETA - 10.09.2018 ===
+! For web user accounts, the maximum number of adjustable slots can now be set. The prerequisite for this is that the permission "virtualserver_maxclients" has been granted for the processing of virtual servers
++ API support has been improved
+* Code cleanup
+
+=== Release 1.0.65 (RC19/1.1.0) BETA - 09.09.2018 ===
++ The update process and its presentation has been optimized
++ Before an update can be carried out, it is now checked whether the value php max_execution_time is sufficient
+* Updated curl/curl (1.9.2 => 1.9.3)
+* Updated symfony/console (v4.1.3 => v4.1.4)
+
+=== Release 1.0.64 (RC18/1.1.0) BETA - 08.09.2018 ===
+! Super administrators and resellers can now view the interface from the point of view of the TSI user and log in to the user's account via a new action button in the user list
+! Super administrators can now view the interface from the point of view of the reseller and log in to the user's account via a new action button in the reseller list
+- Fixed a bug that caused users to be unable to log in while the maintenance mode was active
+
+=== Release 1.0.63 (RC17/1.1.0) BETA - 06.09.2018 ===
+- Fixed a bug that caused the option to create music bots not being displayed when the Server Interface was first called on TeaSpeak servers.
++ Bot support has been greatly improved
++ The bot configuration can now also be changed and saved while a simple bot is active
++ The button for starting a Simple Bots now remains disabled until a configuration has taken place and this has been saved
++ Multilingual concept has been optimized
++ French and Dutch language pack added
+
+=== Release 1.0.62 (RC16/1.1.0) BETA - 03.09.2018 ===
+- Fixed an issue where the case of TeaSpeak tokens was ignored
+* The flat style has been optimized. The link to the reseller login no longer appears in white
+* The DNS license validation cache has been disabled
+
+=== Release 1.0.61 (RC15/1.1.0) BETA - 31.08.2018 ===
+! Reseller support has been improved. Resellers can now also use the API interface to manage assigned or owned instances when the right has been granted.
+! Support for the API interface has been improved and compatibility with TeaSpeak has been optimized
++ Error handling has been improved
+
+=== Release 1.0.60 (RC14/1.1.0) BETA - 29.08.2018 ===
+* Contributions have been updated
+* Code cleanup
+
+=== Release 1.0.59 (RC13/1.1.0) BETA - 28.08.2018 ===
+- Intelligent multilingualism can now only be used in maintenance mode or if the system has no TSI users except Super Administrator to avoid file access errors
++ License management now provides information on the number of manageable instances and web users
++ The respective license is now displayed in the header bar
++ The package manager has been optimized with regard to the installation of manual updates
++ An option has been added to the system settings to put the TSI in a maintenance mode
++ Bot support has been improved
+
+=== Release 1.0.58 (RC12/1.1.0) BETA - 25.08.2018 ===
++ Support for reseller management has been improved
++ Support for the API interface has been improved
+
+=== Release 1.0.57 (RC11/1.1.0) BETA - 25.08.2018 ===
++ Locally executable ionCube loaders for linux (64-bit) and windows (64-bit) have been added to the system
+
+=== Release 1.0.56 (RC10/1.1.0) BETA - 25.08.2018 ===
+- When updating icons (servers), the cache should now also be updated server-wide
++ Functions have been added to export or import single or multiple users
++ The export and import function for user roles has been optimized
++ If the fields Server IP and Query Port are left empty when adding instances, the default values ​​are automatically adopted
++ Login process has been optimized
+
+=== Release 1.0.55 (RC9/1.1.0) BETA - 23.08.2018 ===
+! Minimum system requirement has been raised to PHP 7.1, older versions are no longer supported
+! The entire system now uses the ionCube technology and requires the ionCube loader to be able to run
+- Testing for new versions of instances should now work properly
+- A display error in the Server Quick menu has been corrected
++ Bot support has been significantly optimized in terms of database utilization
+* Updated symfony/console (v3.4.14 => v4.1.3)
+* Updated doctrine/instantiator (1.0.5 => 1.1.0)
+* Updated doctrine/inflector (v1.2.0 => v1.3.0)
+* Updated doctrine/collections (v1.4.0 => v1.5.0)
+* Updated doctrine/cache (v1.6.2 => v1.8.0)
+* Updated doctrine/annotations (v1.4.0 => v1.6.0)
+* Updated doctrine/common (v2.7.3 => v2.8.1)
+* Updated doctrine/dbal (v2.5.13 => v2.6.3)
+* Updated webmasters/doctrine-extensions (5.2.0 => 5.3.0)
+
+=== Release 1.0.54 (RC8/1.1.0) BETA - 23.08.2018 ===
++ Instances for whose server software an update is available are now marked with a red corner on the dashboard
++ The display of the active clients from the Server Quick menu has been added to the server list
++ However, users who are granted the tsi_virtualserver_create_from_template privilege but have not the tsi_virtualserver_create privilege can now create virtual servers from the template
+
+=== Release 1.0.53 (RC7/1.1.0) BETA - 21.08.2018 ===
+! Bot support has been significantly improved. Old configuration files are no longer valid, so a reconfiguration of all already existing bots is necessary.
+- Fixed a bug that caused only an icon to be displayed on TeaSpeak servers in the server list
++ The system cronjob for the autostart of simple bots has been optimized
++ At the request of some users, the default nickname of the Query Client has been changed, this nickname no longer contains the IP address
++ Caching system has been optimized
+* Updated planetteamspeak/ts3-php-framework (1.1.32 => 1.1.33)
+* Updated curl/curl (1.9.1 => 1.9.2)
+
+=== Release 1.0.52 (RC6/1.1.0) BETA - 20.08.2018 ===
+- The cause for the error that instance and server data were cached under wrong cache IDs could now be identified and completely fixed
+
+=== Release 1.0.51 (RC5/1.1.0) BETA - 19.08.2018 ===
+* The new functions of the buttons in the Quick menu of virtual servers are now subject to the respective role permissions as intended
+
+=== Release 1.0.50 (RC4/1.1.0) BETA - 19.08.2018 ===
+- The error that instance and server data was cached under wrong cache ids should now no longer occur
+- Fixed a bug that caused path statements related to cronjobs to be generated incorrectly when the TSI is in a subdirectory
++ Virtual servers can now also be started or stopped via the status button in the quick menu
++ Resellable instances are now marked as such for Resellers
++ Persistence of system cron jobs has been improved
++ The connection check for instances has been improved
+
+=== Release 1.0.49 (RC3/1.1.0) BETA - 18.08.2018 ===
+! Full support for reseller management has been implemented
+- Fixed a bug that caused virtual servers to be played under an incorrect cache id after the session ended
+- An error has been fixed which led to the message "Undefined variable: data" in the server interface
++ The TeaSpeak music bot player now supports streaming content
++ The "Created at" column in the server list has been replaced by "Running since"
++ The functions in the server list to start or stop servers have been optimized
++ The functions in the server list for changing the autostart settings have been optimized
++ The caching system has been optimized
++ Update management has been improved
+* Code cleanup
+
+=== Release 1.0.49 (RC1/1.0.49 BETA) ALPHA - 16.08.2018 ===
+! Full support for reseller management has been implemented
++ The "Created at" column in the server list has been replaced by "Running since"
++ The functions in the server list to start or stop servers have been optimized
++ The functions in the server list for changing the autostart settings have been optimized
++ The caching system has been optimized
++ Update management has been improved
+
+=== Release 1.0.48 (RC2/1.1.0) BETA - 08.08.2018 ===
++ Cache system has been significantly improved
++ The caching strategy "minimal caching" has been added to the system settings
++ The persistence of server query connections has been improved
++ The status identification of the chat function has been improved
++ Avatars are now also displayed when the corresponding client is offline
++ Improved error handling
+* Updated gedmo/doctrine-extensions (v2.4.35 => v2.4.36)
+* Updated symfony/debug (v3.4.12 => v3.4.14)
+* Updated symfony/polyfill-mbstring (v1.8.0 => v1.9.0)
+* Updated symfony/console (v3.4.12 => v3.4.14)
+- Fixed an issue that caused users to be assigned only one instance to see only a white page if that instance was offline. From now on, users whose instance is offline will be forwarded to the next possible instance if available or automatically logged out
+- Fixed a bug that caused text messages in modal windows not to be received
+
+=== Release 1.0.47 (RC1/1.1.0) BETA - 07.08.2018 ===
+! An extensive cache system has been implemented that minimizes the number of query requests and the loading speed of the content
+! Two configuration options have been added to the system settings to set the cache runtime and the caching strategy
++ A button has been added to the controllbar that shows the status of the cache and allows it to be updated
++ Role Management has been added a new permission (tsi_cache_dedicated_update) to control access to the manual cache update
++ A selection box for icons has been added to the setting options of the channel creation
+- Fixed a bug that caused no TSI users to be created or edited when one or more instances were offline
+- Incorrect translations have been corrected
+
+=== Release 1.0.46 BETA - 23.07.2018 ===
++ Via the context menu of the channels in the TS Explorer music bots can now be created (only for TeaSpeak server)
++ Music bots can now be controlled via the server interface (only for TeaSpeak server)
++ Permissions have been added to role management
+("tsi_virtualserver_music_bot_create", "tsi_virtualserver_music_bot_delete", "tsi_virtualserver_music_bot_queue_add",
+"tsi_virtualserver_music_bot_action", "tsi_virtualserver_music_bot_queue_rem", "tsi_virtualserver_music_bot_player")
+- Bugfix for 'Undefined variable: btruns'
+
+=== Release 1.0.45 BETA - 17.07.2018 ===
+- Fixed an issue that prevented Simple Bots from starting
+
+=== Release 1.0.44 BETA - 17.07.2018 ===
++ In addition to IPv4 and IPv6, the host name can now also be used for instances
++ Bot support for TeaSpeak Server has been improved
++ Error handling for simple bots has been improved
++ To better distinguish the server platform, icons have been added to the instance selection in the navigation menu
+
+=== Release 1.0.43 BETA - 16.07.2018 ===
++ Compatibility for TeaSpeak Servers has been improved
++ Improved exception error handling
+* Code cleanup
+
+=== Release 1.0.42 BETA - 14.07.2018 ===
++ Compatibility for TeaSpeak Servers has been improved
++ Descriptions during the installation have been improved
+* Code cleanup
+
+=== Release 1.0.41 BETA - 13.07.2018 ===
+! Complete compatibility of all functions now also for TeaSpeak servers
+! Upgrading your TeamSpeak servers to 3.2.0 (build >= 1525708231) is recommended
++ The performance and speed of querying servers has been significantly improved
++ Query connection using IPv6 address has been implemented
+- The creation of incorrect paths for hostbanners has been fixed
+* Updated symfony/debug (v3.4.11 => v3.4.12)
+* Updated symfony/console (v3.4.11 => v3.4.12)
+* Code cleanup
+
+=== Release 1.0.40 STABLE - 01.07.2018 ===
+=== Release 1.0.40 BETA - 30.06.2018 ===
+- The icon for adding a note will no longer be displayed if the user does not have the appropriate authorization
+
+=== Release 1.0.39 BETA - 24.06.2018 ===
+! Updated jQuery Core (v1.6.3 => 1.12.4)
+! Removed Old-Browser support
+- Fixed an issue where channel properties could not be loaded in the server interface
++ Extensive note system implemented to help manage virtual servers
++ Added the tsi_instance_notes_manage property to the instance permissions to control access to the Notes management
+* Javascript source code has been optimized
+
+=== Release 1.0.38 BETA - 19.06.2018 ===
+! The bootstrapping has been significantly optimized
+! It is now possible to specify a database prefix during installation
+- An error has been fixed that caused after an update that when calling the TSI only a white page appears
+- Fixed an issue that prevented the current template from being properly identified during the installation of extensions
++ In the system settings, a result cache driver can now be configured (This cache is not yet used, but will be used in future releases)
++ From now on, the server statistics also record the number of real clients, without Query Clients, which can be retrieved via the statistics page using "Realclientsonline"
++ During installation, an individual date format can now be specified
++ The date format can now be defined in the system settings
++ Added gedmo/doctrine-extensions (2.4.0)
+* Updated webmasters/doctrine-extensions (v5.0.0 => 5.2.0)
+* Updated doctrine/orm (v2.5.5 => 2.5.14)
+* Updated doctrine/common (v2.5.5 => 2.7.3)
+* The operation of the update manager has been optimized
+* The system settings have been rearranged
+* Updated contributions.txt
+
+=== Release 1.0.37 BETA - 13.06.2018 ===
+* Updated dragonmantank/cron-expression (v2.1.0 => v2.2.0)
+* Fixed an issue that could cause the "Stay logged in" feature to fail in some circumstances
+* The login procedure has been optimized
+* Complications in logging debug mode have been fixed
+
+=== Release 1.0.36 BETA - 12.06.2018 ===
+* The login procedure has been optimized
+* Some complications in logging debug mode have been fixed
++ Missing language variables were added
+! Authorized Teamspeak Hosters can now add an ATHP link to their instances. If such a link is deposited and verified, this is indicated by an icon in the status bar next to the selected instance. ATHP links are sporadically checked for correctness by the system.
+
+=== Release 1.0.35 BETA - 11.06.2018 ===
+* Fixed a bug that resulted in very long load times when viewing logs and an oversized file size. The presentation of logs is now limited to a file size of more than 200 kilobytes to 30000 characters.
++ Role management has been added permissions for simple bots (tsi_virtualserver_bot_option_protect_servergroups, tsi_virtualserver_bot_option_protect_channelgroups)
+
+=== Release 1.0.34 BETA - 06.06.2018 ===
+- Removed amstaffix/pagination (1.1.3)
+* Updated symfony/debug (v3.4.10 => v3.4.11)
+* Updated symfony/console (v3.4.10 => v3.4.11)
++ Added katzgrau/klogger (1.2.1)
+* Fixed a bug in the adaptations settings that caused an exception error when sending an empty upload form
+* Fixed an issue that prevented extensions from being installed on some Windows-based systems
+* The number of query clients is now displayed separately from all other clients in the Server Quick menu
+* Multilingualism system has been optimized
+* Error handling related to Ajax requests has been completely redesigned and significantly improved
++ Role management has been added new permission for access control of simple bots
+* Chat features for servers, channels and clients have been optimized
+! Since the chat function in the interface currently does not work when a simple bot is active on the server, the tabs are disabled in the current version
+! The system method for creating required directories has been optimized. Error messages regarding insufficient directory permissions should no longer occur
++ A new timed task has been added to the system cronjobs to aumoatically create snapshots of all virtual servers
++ Role management has been added permissions for simple bots (tsi_virtualserver_bot_start, tsi_virtualserver_bot_stop, tsi_virtualserver_bot_log_view,
+tsi_virtualserver_bot_start_modify, tsi_virtualserver_bot_performance_modify, tsi_virtualserver_bot_channel_status_modify, tsi_virtualserver_bot_option_automatic_welcome,
+tsi_virtualserver_bot_option_command_line, tsi_virtualserver_bot_option_away_from_keyboard, tsi_virtualserver_bot_option_forced_arrest,
+tsi_virtualserver_bot_option_auto_kick, tsi_virtualserver_bot_option_forced_freezing)
+* Ajax cronjobs now perform time-controlled tasks again only for currently called instances and servers
+! The way of logging has been completely revised. The TSI now differentiates between 8 protocol levels, which can now be configured in the settings
+* During the installation it is now tried to determine the current time zone based on the PHP settings to simplify the selection
+
+=== Release 1.0.33 BETA - 27.05.2018 ===
+* Standard and flat style improved
+* The standard system cronjobs of the Maincore class have been given a method of autostarting Simple Bots
+* Added a feature to restore individual system cronjobs
+
+=== Release 1.0.32 STABLE - 26.05.2018 ===
++ Added rah/danpu (2.6.2)
+* Improved installation process
+
+=== Release 1.0.31 BETA - 25.05.2018 ===
+- Removed cosmicvelocity/media-types (1.2)
+- Removed phpmailer/phpmailer (v6.0.0rc5)
+* Updated curl/curl (1.9.0 => 1.9.1)
+* Updated symfony/debug (v3.4.9 => v3.4.10)
+* Updated symfony/console (v3.4.9 => v3.4.10)
+* Bot support and stability improved
+* Standard and flat style improved
+* Fixed a bug that caused the structure and functionality of tables to be lost when opening a modal window that also contains a table
+* The presentation of exceptions and handlers has been improved
+
+=== Release 1.0.30 BETA - 22.05.2018 ===
+* Preparatory features for bot support have been optimized for Windows-based operating systems
+
+=== Release 1.0.29 BETA - 21.05.2018 ===
+* Preparatory features for bot support have been optimized for Windows-based operating systems
+* The dependency of individual functions on the PHP extension Mime Magic has been completely removed
+
+=== Release 1.0.28 BETA - 19.05.2018 ===
+* Preparatory features for bot support have been optimized for Windows-based operating systems
+
+=== Release 1.0.27 BETA - 18.05.2018 ===
+* If an upload function fails, an error message will appear immediately
+* Various optimizations and adjustments to prepare for bot extension
+
+=== Release 1.0.26 BETA - 11.05.2018 ===
+- Removed webignition/disallowed-character-terminated-string (1.0)
+- Removed webignition/string-parser (0.2.3)
+- Removed webignition/quoted-string (0.2.1)
+- Removed webignition/internet-media-type (0.4.8)
+- Removed dflydev/apache-mime-types (v1.0.1)
+- Removed dflydev/canal (v1.0.0)
++ Added cosmicvelocity/media-types (1.2)
+* The redeclaration of the mime_content_type function has been improved and should now work
+
+=== Release 1.0.25 BETA - 11.05.2018 ===
+* Updated curl/curl (1.8.0 => 1.9.0)
+* Updated dragonmantank/cron-expression (v2.0.0 => v2.1.0)
+* Updated symfony/debug (v3.4.7 => v3.4.9)
+* Updated symfony/polyfill-mbstring (v1.7.0 => v1.8.0)
+* Updated symfony/console (v3.4.7 => v3.4.9)
+* Updated planetteamspeak/ts3-php-framework dev-master
++ Added webignition/disallowed-character-terminated-string (1.0)
++ Added webignition/string-parser (0.2.3)
++ Added webignition/quoted-string (0.2.1)
++ Added webignition/internet-media-type (0.4.8)
++ Added dflydev/apache-mime-types (v1.0.1)
++ Added dflydev/canal (v1.0.0)
++ Redeclared function mime_type_content if php extension mime magic is missing
+
+=== Release 1.0.24 STABLE - 03.05.2018 ===
+* The presentation of some settings pages has been optimized
+* Broken breadcrumbs have been corrected
+* The flat style has been slightly optimized
+* Various representations and texts have been optimized
+
+=== Release 1.0.23 STABLE - 25.04.2018 ===
+* The structure of the menu items has been optimized
+* The acknowledgments have been updated
++ It is now possible to create templates for the creation of virtual servers
++ Existing virtual servers can be saved as a template
++ An extensive cronjob management has been added to the settings options
++ For instances and virtual servers, detailed statistics pages are now available
++ A feature has been added to the system options to clear all statistics
++ The sorting of extensions can now be changed in the TSI settings under the menu item Adaptation
++ Cronjobs can now be accessed via Webcron or Crontab (Module API-Interface required)
++ For security reasons, calling the cronjob script from the web requires HTTP authentication
++ An option has been added to the security settings to enforce the variables for HTTP authentication
+* The installation of the TSI can now also be done with PHP 7.1, but is currently still considered a BETA test
+- Fixed a bug that caused server log entries to be tagged with the wrong date
+* The style package Flat has been completely redesigned
++ During the installation process it is now possible to set the style of the TSI
+* When installing extensions, the style of the main system is automatically taken over if it exists
+
+=== Release 1.0.22 BETA - 25.04.2018 ===
++ During the installation process it is now possible to set the style of the TSI
+* When installing extensions, the style of the main system is automatically taken over if it exists
+
+=== Release 1.0.21 BETA - 23.04.2018 ===
+* Various improvements to the flat design
+
+=== Release 1.0.20 BETA - 23.04.2018 ===
+* The style package Flat has been completely redesigned
+- Missing translations have been added
+
+=== Release 1.0.19 BETA - 19.04.2018 ===
+- Fixed a bug that caused server log entries to be tagged with the wrong date
+* The performance of the system cron jobs has been improved
+* The installation of the TSI can now also be done with PHP 7.1, but is currently still considered a BETA test
+
+=== Release 1.0.18 BETA - 18.04.2018 ===
++ For security reasons, calling the cronjob script from the web now requires HTTP authentication
++ An option has been added to the security settings to enforce the variables for HTTP authentication
+
+=== Release 1.0.17 BETA - 10.04.2018 ===
++ Cronjobs can now be accessed via Webcron or Crontab (API interface required)
+* The cronjob methods have been improved so that fewer requests are sent to the respective servers
+
+=== Release 1.0.16 BETA - 10.04.2018 ===
++ The sorting of the display of extensions can now be changed in the TSI settings under the menu item Adaptation
+* Missing language variables added
+
+=== Release 1.0.15 BETA - 08.04.2018 ===
+- The error "JSON.parse: bad control character" has been fixed and should not happen again
++ A feature has been added to the system options to clear all statistics
+* Missing language variables added
+
+=== Release 1.0.14 BETA - 08.04.2018 ===
+* The structure of the menu items has been optimized
++ It is now possible to create templates for the creation of virtual servers
++ Existing virtual servers can be saved as a template
++ An extensive cronjob management has been added to the settings options
++ For instances and virtual servers, detailed statistics pages are now available
+* The acknowledgments have been updated
+
+=== Release 1.0.13 STABLE - 08.04.2018 ===
+=== Release 1.0.13 BETA - 26.03.2018 ===
+* The license validation system has been improved
+* In the trial period of the demo, the notice will appear as planned that automatic updates and package server management will not be available during the trial period
+
+=== Release 1.0.12 BETA - 26.03.2018 ===
+- Fixed a bug that sporadically resulted in an error message when changing the license
+
+=== Release 1.0.11 BETA - 25.03.2018 ===
++ The license system has been redesigned so that a key is generated during the installation that will allow the interface to be tested for seven days
++ It is now possible to test the Tea(m)speak Interface and all modules without a valid license for 7 days in a demo version
+* The license validation system has been improved
+
+=== Release 1.0.10 STABLE - 24.03.2018 ===
+* Authorization system has been improved and optimized
+
+=== Release 1.0.9 STABLE - 20.03.2018 ===
+- Several spelling errors of the German translation were corrected
+- Missing language variables were added
+* The settings page has been completely redesigned and has its own tab in the main menu
+* The term icon packages has been renamed to style packages
++ A feature has been added that allows the icon packages to be uploaded and removed
++ A function has been added to check the structure of the database and have it repaired automatically
++ It is now possible to create custom styles with Icon packages, which are now also adopted by the system
++ On the settings page you can now view a log with acknowledgments and a list of dependent scripts and software
++ On the settings page, a change log can now be viewed
++ The tsi_profile_edit option has been added to the TSI permissions to allow or restrict users from editing their own user account
++ The tsi_profile_icon_package_select option has been added to the TSI permissions to allow or restrict the icon package selection for users
++ Users now have the option to use an alternative icon package
++ Video backgrounds in the formats mp4, webm and ogv are now supported
+
+=== Release 1.0.8 BETA - 20.03.2018 ===
+- Several spelling errors of the German translation were corrected
+
+=== Release 1.0.7 BETA - 19.03.2018 ===
+- Fixed a bug that caused some links in the server list to only lead to a white page
+
+=== Release 1.0.6 BETA - 19.03.2018 ===
+- Fixed an issue where the redirect did not work after importing icons or instance permissions
+- The size of the modal window has been fixed so that they always appear in the middle
+
+=== Release 1.0.5 BETA - 18.03.2018 ===
++ Video backgrounds in the formats mp4, webm and ogv are now supported
+- Fixed a bug that caused thumbnail previews of Style packages to be displayed multiple times
+
+=== Release 1.0.4 BETA - 14.03.2018 ===
+* Changed icons are now immediately updated in the server interface for the corresponding server or channel, without having to reload the page
+* Changed icons are now immediately updated for the corresponding channel in the corresponding editing window, without having to reopen the window.
+
+=== Release 1.0.3 BETA - 13.03.2018 ===
+* Missing language variables were added
+* If a TSI Style package is deleted, all users who have used it are automatically reassigned to the default style
+
+=== Release 1.0.2 BETA - 12.03.2018 ===
+* The term icon packages has been renamed to style packages
+* Checking style packages before uploading has been improved
++ Package-specific information for each style package will now be displayed
+
+=== Release 1.0.1 BETA - 07.03.2018 ===
+* The settings page has been completely redesigned and has its own tab in the main menu
++ A feature has been added that allows the icon packages to be uploaded and removed
++ A function has been added to check the structure of the database and have it repaired automatically
++ It is now possible to create custom styles with Icon packages, which are now also adopted by the system
++ On the settings page you can now view a log with acknowledgments and a list of dependent scripts and software
++ On the settings page, a change log can now be viewed
++ The tsi_profile_edit option has been added to the TSI permissions to allow or restrict users from editing their own user account
++ The tsi_profile_icon_package_select option has been added to the TSI permissions to allow or restrict the icon package selection for users
++ Users now have the option to use an alternative icon package
+
+
+=== Release 1.0.0 - 01.03.2018 ===
+* The overview of the Teamspeak permissions of the roles has been made clearer
+* The install directory is now automatically deleted after an auto-update
+* The display of the current server in the header bar now correctly displays the current server software
+* In the client list, the corresponding group icons are now displayed for each user
++ The editing function for virtual servers has been extended so that the port can now also be changed or specified
+
+=== Release 0.0.65 RC10 - 26.02.2018 ===
+* Restricting the interface permissions "virtualserver_servergroup_template_modify, virtualserver_servergroup_query_modify and virtualserver_channelgroup_template_modify" now causes the respective groups to be no longer editable by the role.
+* The performance of the CSS editor has been improved using Closure Compiling
+* In the server list now only the number of users without Query Clients is displayed
+
+=== Release 0.0.64 RC9 - 23.02.2018 ===
+* Improved installation process
++ An option has been added to the TS Explorer to hide Query Clients
++ In the settings of the global representation, a feature has been added for customizing the template with CSS
+* Improved sql template for installation process
+* If you change the logo of the TSI, the favicon will be automatically changed as well (only possible with Branding-Free license)
+
+=== Release 0.0.63 RC8 - 15.02.2018 ===
+- Fixed a bug that prevented the style sheet for the Icon package Flat from being created
+
+=== Release 0.0.62 RC7 - 15.02.2018 ===
+- Waste roles permissions have been removed
+* Improved error handling for server node actions
+
+=== Release 0.0.61 RC6 - 11.02.2018 ===
+* Fixed an incompatibility issue that could cause some browsers that do not support the latest JavaScript features to support servers or channels for editing
+
+=== Release 0.0.60 RC5 - 10.02.2018 ===
+* User Account Management improved
+
+=== Release 0.0.59 RC5 - 09.02.2018 ===
++ A new feature has been added, user accounts can now be locked through User Account Management
+- Fixed a bug that caused permission lists to not load properly
+* Any error messages have been revised
+* The source code has been optimized in several places
+* Fixed minor flaws in the presentation
+
+=== Release 0.0.58 RC4 - 08.02.2018 ===
+- Fixed an issue that caused the auto-update on Windows servers to fail each time
++ Update information received via the package server will now be cached
+
+=== Release 0.0.57 RC3 - 07.02.2018 ===
+! The performance could be increased many times since icons are now loaded asynchronously. The loading times of any pages no longer depend on the number of icons. Furthermore, the check of individual icons was removed for presence, since this process has influenced the performance of the entire program too much for many icons, which often led to errors
+! The server query persistence has been significantly improved
+* Fixed an issue where snapshots could not be created on Windows servers
+- Fixed a bug that caused Windows Servers to not display the icons in the top navigation bar
+* Missing translations added
+
+=== Release 0.0.56 RC2 - 04.02.2018 ===
+* All file path separators are now dynamically adapted to the respective operating system
+* Missing translations added
+- Fixed a bug that caused Windows Servers to not display the icons in the top navigation bar
+* Error d.html is not a function has been fixed
+
+=== Release 0.0.55 RC1 beta - 03.02.2018 ===
+* Improved Entities
+* Missing translations added
+* Optimized source code
+
+=== Release 0.0.54 beta - 02.02.2018 ===
+* Missing translations added
+
+=== Release 0.0.53 beta - 02.02.2018 ===
++ From now on you can easily change the host banner of individual servers via the respective quick menu via upload
++ The tsi_virtualserver_hostbanner_upload privilege has been added to the TSi permissions to restrict access to the upload and modify feature of a host banner
+* Missing translations added
+
+=== Release 0.0.52 beta - 01.02.2018 ===
+* Fixed a bug in the package manager that caused extensions not to be properly licensed during installation.
+
+=== Release 0.0.51 beta - 01.02.2018 ===
+* Missing translations added
+
+=== Release 0.0.50 beta - 27.01.2018 ===
+* Throughout the system, cross site scripting optimizations were performed
+* The option window for adding a new instance now displays the IP address that must be entered in the whitelist of the Teamspeak server
+* Package server management has been optimized
+* Missing translations added
+- Fixed a bug where "invalid input" errors occurred when saving channels, if no changes were made
++ With a Brading-Free version you can now upload and use an individual logo in the settings of the global presentation
+* Missing translations added
+* Improved error handling for server node actions
+* The menu item Extensions has been renamed to Packages, as updates via the previous Extensions Manager can now also be installed
+
+=== Release 0.0.49 beta - 27.01.2018 ===
+# security update
++ The connection options have the option 'Safe Request Methods Only' added
++ The connection options have the option 'Block POST requests without useragent' added
++ The connection options have the option 'Clickjacking Prevention' added
++ The connection options have the option 'Limit HTML protocols' added
+* Throughout the system, cross site scripting optimizations were performed
+* Missing translations added
+
+=== Release 0.0.48 beta - 27.01.2018 ===
+- Fixed a bug that caused a redirect error when setting a new password and the TSI is not yet licensed
++ Added missing translations
+
+=== Release 0.0.47 beta - 23.01.2018 ===
+- Bug fix for duplicate directory parameters in file paths during update
+- Fixed a bug that caused no multiple web users to be allowed without query nicknames
++ Added package server management
+* Optimized extension management
+
+=== Release 0.0.46 beta - 21.01.2018 ===
+* The path separators are now generated individually depending on the system
+* A display error in the server list has been fixed
+* A display error in the server interface has been fixed
++ Added the ability to restrict access to installed extensions using TSI role
++ Added missing translations
+
+=== Release 0.0.45 beta - 20.01.2018 ===
++ added a function to export and import tsi permission roles
++ tsi permission tsi_virtualserver_client_poke added to role options
++ tsi permission tsi_virtualserver_kick added to role options
++ tsi permission tsi_virtualserver_channel_kick added to role options
++ tsi permission tsi_virtualserver_complaints_create added to role options
++ tsi permission tsi_virtualserver_ban_create added to role options
+* Fixed a bug that caused users to create channels despite missing permissions
+* The limit on file size from log files to compression has been reduced
+
+=== Release 0.0.44 beta - 20.01.2018 ===
+* Query users are now marked with their own icon in the TS Explorer
+- Bugfix for update manager
++ Added missing translations
+
+=== Release 0.0.43 beta - 19.01.2018 ===
+* Bugfix try for update error on windows IIS servers
+* Bugfix try for creating snapshots on windows IIS servers
+* Improved extension management
+* Improved sql install template
+* Added missing translations
+
+=== Release 0.0.42 beta - 16.01.2018 ===
++ Added a new feature to import snapshots
++ New TSI permission added for snapshot import
+* Improved sql install template
+* Added missing translations
+
+=== Release 0.0.41 beta - 16.01.2018 ===
+* Fixed a bug that caused the channel type to be temporarily set when editing and saving a channel if a user did not have the TSI "channel_type_options" permission.
+* Missing translations added
+
+=== Release 0.0.40 beta - 10.01.2018 ===
++ Added virtualserver_codec_encryption_mode to virtual server properties
+* Missing translations added
+* Bugfix for error invalid file path
+* Improved error handling
+* Improved license management
+
+=== Release 0.0.39 beta - 09.01.2018 ===
++ For language selection, there is now a separate selection window
+* Bugfix for about window is not displayed completely
+* Bugfix for error undefined variable: original in translation
+* It was fixed a bug that led to the permission Icon-ID after the first had to be reloaded to select an icon
+* The About window has been scaled down
+* Missing translations added
+
+=== Release 0.0.38 beta - 09.01.2018 ===
++ For each user an individual ServerQuery nickname with up to 25 characters can now be defined
++ Implemented possibility of multilingualism
++ Added german tranlation pack
++ Descriptions in the form of tooltips have been added to all TSI authorizations of the roles.
+* Improved Icon-Management
+* Improved private, channel and server chat
+* Improved general error handling
+* Bugfix for TS Explorer Channel list if a cspacer is empty
+
+=== Release 0.0.37 beta - 30 Dec 2017 ===
+* Icon management has been redesigned. The Ids should now be properly generated and converted, which should no longer come to a "convert error"
+* A display error has been fixed in the TS Explorer
++ In TS Explorer individual styles for spacers can now be set
++ Added package gettext/gettext to prepare for multilingualism
+- PHP Extension Mcrypt is no longer part of requirements
+
+=== Release 0.0.36 beta - 29 Dec 2017 ===
+* Reworking on the new icon management
+
+=== Release 0.0.35 beta - 28 Dec 2017 ===
+* Reworking on the new icon management
+
+=== Release 0.0.34 beta - 28 Dec 2017 ===
+* Icon management has been redesigned. The Ids should now be properly generated and converted, which should no longer come to a "convert error"
+* A display error has been fixed in the TS Explorer
++ In TS Explorer individual styles for spacers can now be set
+
+=== Release 0.0.33 beta - 26 Dec 2017 ===
+* An error has been fixed which caused the DB Updater to delete all tables of the TSI system after an update
+* Fixed a bug that caused some server options to not work properly
++ In the TSI settings, you can now configure whether expansion packages a link in the server list should be displayed
+
+=== Release 0.0.32 beta - 25 Dec 2017 ===
+* Function of private client chat has been improved
+* Improved database auto updater
+* Error handling generally improved
++ Added a feature that allows sending and receiving server messages
++ Added a feature that allows you to send and receive channel messages
++ In the menu of the TS Explorer you can now set the timeout of the Chat Bots under Options
+
+=== Release 0.0.31 beta - 23 Dec 2017 ===
+* Bugfix for snapshot download
+* Improved webuser creation
++ Added instance connection check on dashboard
+* Changed autostart status icons
+* Function of refresh button of the instance list has been changed, this now updates the status of all instances
++ A feature has been added to allow private conversation with clients
+* Bug fix for incorrect sorting of client nicknames.
+* Error handling generally improved
+
+=== Release 0.0.30 beta - 15 Dec 2017 ===
++ Added 404 error page
+* Bugfix for 'Column 'reg_date' cannot be null'
+* Improved error handling
+* minified javascript
+* empty index page has been added to each folder
+* security of automatically created password has been improved
+* bugfix for js dataTables exception
+* bugfix for broken update icons
+
+=== Release 0.0.29 beta - 12 Dec 2017 ===
++ Channelgroups can now be edited for clients that are offline
++ When editing clients, 'all' channels can now be selected for channel groups
+* Improved error handling
+* Directory structure for extensions simplified
+
+=== Release 0.0.28 beta - 10 Dec 2017 ===
++ Servergroups can now be edited for clients that are offline
++ Channelgroups can now be edited for clients that are offline
++ When editing clients, channels can now be selected for channel groups
+
+=== Release 0.0.27 beta - 10 Dec 2017 ===
++ Added multiple styles for TS Explorer
+* Fixed TS Explorer appearance
+
+=== Release 0.0.26 beta - 09 Dec 2017 ===
++ Improved error handling when installing extensions
+* The appearance of the TS Explorer has been changed
+
+=== Release 0.0.25 beta - 08 Dec 2017 ===
+* Improved error handling for Teamspeak 3 connections.
+
+=== Release 0.0.24 beta - 08 Dec 2017 ===
+* Improved error handling for Teamspeak 3 connections.
+
+=== Release 0.0.23 beta - 08 Dec 2017 ===
++ Added auto refesh function by saving changes
+* Fixed a bug that caused an internal server error (500) when connecting to Teamspeak 3 server failed.
+
+=== Release 0.0.22 beta - 08 Dec 2017 ===
++ bugfix for broken icons
+
+=== Release 0.0.21 beta - 07 Dec 2017 ===
++ added some permissions
+
+=== Release 0.0.20 beta - 06 Dec 2017 ===
+* Bugfix for Update-Manager
+
+=== Release 0.0.19 beta - 06 Dec 2017 ===
+* Bugfix for Update-Manager
+
+=== Release 0.0.18 beta - 06 Dec 2017 ===
+* Bugfix for Update-Manager
+
+=== Release 0.0.17 beta - 06 Dec 2017 ===
+* Bugfix for Update-Manager
+
+=== Release 0.0.16 beta - 04 Dec 2017 ===
++ checking extension bcmath added
+* The standard icons have been replaced. The new ones are of a higher quality and uniform
++ The TSI Main System now has over two own Icon Packages (Standard & Flat)
+* The TSI protocols are no longer integrated into the settings but get their own menu item and modal window
++ Under the menu TSI settings the available Icon packages can be configured
+* The complete TSI is now compressed using GZIP and a stylesheet cache has been implemented for optimal performance in terms of load times
++ For the stylesheet cache, functionalities are added to the TSI Settings
+
+=== Release 0.0.15 beta - 04 Dec 2017 ===
++ implemented auto update function for database schema
+
+=== Release 0.0.14 beta - 27 Nov 2017 ===
+- bugfix for deleting wrong icons in filebrowser
++ files can now be moved between channels by drag & drop
++ added tsi role permission for moving files
+
+=== Release 0.0.13 beta - 26 Nov 2017 ===
+- bugfix for select field transformations if modal opens
+- bugfix for modifing multiple channelgroup assignements
+- bugfix for error msg in client clones list
+
+=== Release 0.0.12 beta - 26 Nov 2017 ===
++ added button to delete install directory via a link in the error message
+* log entries can now be filtered, searched and sorted
+- bugfix for exceptions in tsi explorer if query clients where selected
++ added option to modify channelgroups from assignements list
+- bugfix for hidden spacer directories
+
+=== Release 0.0.11 beta - 25 Nov 2017 ===
+* Encryption type changed for instance data
+
+=== Release 0.0.10 beta - 25 Nov 2017 ===
++ added new function for resetting servers to default
++ added new role permissions for resetting servers to default
++ added option to edit already stored instances
+- bugfix for adding instances
+* some code optimizations
+
+=== Release 0.0.9 beta - 25 Nov 2017 ===
+* installation method of the database replaced by PDO
+* some code optimizations
+
+=== Release 0.0.8 beta - 24 Nov 2017 ===
++ added database selection for install process
+
+=== Release 0.0.7 beta - 23 Nov 2017 ===
++ checking extension mcrypt added
+- bugfix for adding instances
+
+=== Release 0.0.6 beta - 22 Nov 2017 ===
++ added error logging
++ added error log view in tsi setting
++ added option to import icons from instance by adding
+* using objects instead of array elements where possible
+
+=== Release 0.0.5 beta - 21 Nov 2017 ===
+- disabling buttons if ajax request is running
+- replaced some array items by objects
+
+=== Release 0.0.4 beta - 20 Nov 2017 ===
+- error handling if default-config.php could not be created
+- forwarding depending on the configuration
+
+=== Release 0.0.3 beta - 19 Nov 2017 ===
+- filled up missing text passages
+* changed file size limit for log file compression
+
+=== Release 0.0.2 beta - 18 Nov 2017 ===
++ log handler for ajax requests
++ log viewer at tsi settings
++ gzip compression
+- fixed auto update check
+
+=== Release 0.0.1 beta - 13 Nov 2017 ===
++ Release
+
