@@ -1,0 +1,27 @@
+{
+    "name": "webmasters/doctrine-extensions",
+    "type": "library",
+    "description": "Doctrine2 extensions",
+    "keywords": [
+        "webmasters",
+        "doctrine2",
+        "extensions",
+        "bootstrap",
+        "validators"
+    ],
+    "homepage": "http://github.com/LeisureLarry/doctrine-extensions",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jan Teriete",
+            "email": "leisure.larry@habmalnefrage.de"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "doctrine/orm": ">=2.6.3,<2.7-dev"
+    },
+    "autoload": {
+        "psr-0": { "Webmasters": "lib/" }
+    }
+}
