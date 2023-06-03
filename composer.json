@@ -1,0 +1,78 @@
+{
+  "autoload": {
+    "psr-0": {
+      "Controllers": "./src/",
+      "Cronjobs": "./src/",
+      "Entities": "./src/",
+      "Models": "./src/",
+      "Helper": "./src/",
+      "Interfaces": "./src/",
+      "Repositories": "./src/",
+      "Traits": "./src/",
+      "Translations": "./src/",
+      "Exceptions": "./src/"
+    },
+    "files": [
+      "inc/functions.inc.php"
+    ]
+  },
+  "license": [
+    "Copyright (c) 2020. DW Web-Engineering, all rights reserved",
+    "https://github.com/dwwe2017/teamspeak-interface/blob/latest/license_en_GB.txt"
+  ],
+  "authors": [
+    {
+      "name": "Daniel Welzl",
+      "email": "daniel@dwwe.de",
+      "homepage": "https://www.dwwe.de/",
+      "role": "Author, Developer"
+    },
+    {
+      "name": "Lucas Brucksch",
+      "email": "lbrucksch@hammermaps.de",
+      "homepage": "https://dwwe.de",
+      "role": "Free developer"
+    }
+  ],
+  "support": {
+    "email": "dwwe@dwwe.de",
+    "forum": "https://github.com/dwwe2017/teamspeak-interface/issues"
+  },
+  "config": {
+    "platform": {
+      "php": "7.4"
+    },
+    "optimize-autoloader": true
+  },
+  "require": {
+    "php": "^7.4",
+    "ext-ctype": "*",
+    "ext-zlib": "*",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-zip": "*",
+    "ext-mysqli": "*",
+    "ext-mbstring": "*",
+    "ext-bcmath": "*",
+    "ext-pdo": "*",
+    "ext-gd": "*",
+    "doctrine/orm": "^2.6.6",
+    "fadoe/date": "^0.7.0",
+    "psr/cache": "1.0.*",
+    "webmasters/doctrine-extensions": "^6.0.0",
+    "planetteamspeak/ts3-php-framework": "^1.1.35",
+    "curl/curl": "1.9.*",
+    "dragonmantank/cron-expression": "^2.0",
+    "gedmo/doctrine-extensions": "^2.4",
+    "wixel/gump": "*",
+    "hammermaps-dev/phpfastcache": "^7.0.10",
+    "predis/predis": "v1.1.1",
+    "phpfastcache/riak-client": "^1.4.4",
+    "phpfastcache/phpssdb": "^1.1.0",
+    "gumlet/php-image-resize": "^1.9.2",
+    "kus/php-image": "dev-master",
+    "monolog/monolog": "2.2.0",
+    "phpmailer/phpmailer": "^6.7",
+    "sonata-project/google-authenticator": "^2.2"
+  }
+}
